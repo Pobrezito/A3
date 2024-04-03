@@ -1,0 +1,40 @@
+name: CI 
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # Veja o cronograma de lançamento do Node.js em https://nodejs.org/en/about/releases/
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Instalar Node.JS ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Construir
+        run: npm run build --if-present
+
+      - name: Executar testes
+        run: npm test -- --passWithNoTests
+
+      - name: Lint
+        run: npx eslint src/**/*.ts
+
+      - name: Instalar ts-prune
+        run: npm install ts-prune
+
+      - name: Executar ts-prune
+        run: npx ts-prune -e -i NotificationFactory -i InMemoryNotificationsRepository -i PrismaService --include src --exclude test
