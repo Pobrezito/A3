@@ -1,0 +1,22 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#movies-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 200px;
+    margin: 10px;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
