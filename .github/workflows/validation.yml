@@ -1,0 +1,32 @@
+name: Validate Commits
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  validate:
+    name: Validate Commits
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Git
+        run: sudo apt-get update && sudo apt-get install -y git
+
+      - name: Install Commitizen
+        run: npm install -g commitizen cz-conventional-changelog
+
+      - name: Validate Commits
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          export CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }} ${{ github.event.before }})
+
+          if ! echo "$CHANGED_FILES" | grep -qE "^(.*\.md|\.github\/workflows\/.*|\.gitignore|LICENSE|CODEOWNERS|\.gitattributes|\.all-contributorsrc|\.editorconfig|\.eslintrc\.js|\.eslintignore|\.github\/.*)$"; then
+            echo "Validating commits..."
+            npx git-cz --allow-custom-scopes
+          else
+            echo "Skipping validation for non-code changes."
+          fi
