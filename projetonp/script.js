@@ -32,7 +32,7 @@ const movies = [
     { title: "O Hobbit: A Batalha dos Cinco Exércitos", poster: "hobbitiii.png" },
     { title: "The Lord of the Rings: The Fellowship of the Ring", poster: "lordoftheringsi.png" },
     { title: "O Senhor dos Anéis: As Duas Torres", poster: "lordoftheringsii.png" },
-    { title: "The Lord of the Rings: The Return of the King", poster: "lordoftheringsiii.png" },
+    { title: "The Lord of the Rings: The Return of the King", poster: "lordoftheringsiii.png" }
     // Adicione mais filmes conforme necessário
 ];
 
