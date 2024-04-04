@@ -2,6 +2,11 @@
 const movies = [
     { title: "Blade Runner", poster: "bladerunner.jpg" },
     { title: "Matrix", poster: "matrix.jpg" },
+    { title: "Star Wars: Episódio I – A Ameaça Fantasma", poster: "starwarsi.png" },
+    { title: "Star Wars: Episódio II – Ataque dos Clones", poster: "starwarsii.png" },
+    { title: "Star Wars: Episódio III – A Vingança dos Sith", poster: "starwarsiii.png" },
+    { title: "Star Wars: Episódio IV – Uma Nova Esperança", poster: "starwarsiv.png" },
+    { title: "Star Wars: Episódio V – O Império Contra-Ataca", poster: "starwarsv.png" }
     // Adicione mais filmes conforme necessário
 ];
 
