@@ -11,7 +11,7 @@
 
 <body>
   <header class="cabecalho">
-    <img class="cabecalho-imagem" src="logo.svg" alt="Logo da comunidade NERD">
+    <img class="cabecalho-imagem" src="favicon.ico" alt="Logo da comunidade NERD">
     <nav class="cabecalho-menu">
       <a class="cabecalho-menu-item" href="https://discord.gg/w8bAwkBy">Comunidade NERDPLANET</a>
       <a class="cabecalho-menu-item">Tutorial</a>
@@ -25,7 +25,15 @@
       <div class="conteudo-principal-escrito">
         <h1 class="conteudo-principal-escrito-titulo">GOSTOU?</h1>
         <h2 class="conteudo-principal-escrito-subtitulo">clique aqui e saiba mais : </h2>
-        <button class="conteudo-principal-escrito-botao">SEJA NP</button>
+        <button class="conteudo-principal-escrito-botao" onclick="irParaPagina()">SEJA NP</button>
+
+        <script>
+            function irParaPagina() {
+                window.location.href = "login.html";
+            }
+        </script>
+        
+
       </div>
       <img class="conteudo-principal-imagem"src="image.png" alt="Imagem da Balle Bot">
     </section>
