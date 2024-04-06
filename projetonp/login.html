@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="login.js"></script>
     <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
     <title>Sign up</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,8 @@
         width: 87%;
         border: none;
         border-radius: 30px;
-        color: #fff;
+        color: #000;
+        background: #fff;
     }
     ::-webkit-input-placeholder{
         color: #fff;
@@ -94,14 +95,14 @@
             </div>
 
             <div class="input-field">
-                <input type="text" class="input" placeholder="usuario" required>
+                <input type="text" id="login" class="input" placeholder="usuario" required>
                 <i class="bx bx user"></i>
                 </div>
                 <div class="input-field"> 
-                    <input type="password" class="input" placeholder="Contraseña" required>
+                    <input type="password" id="senha" class="input" placeholder="Contraseña" required>
                 </div>
                 <div class="input-field">
-                    <input type="submit" class="submit" value="Log in">
+                    <input type="submit" class="submit" value="Log in" onclick="logar(); return false">
                 </div>
 
                 <div class="bottom">
