@@ -1,4 +1,3 @@
-// script.js
 const movies = [
     { title: "Blade Runner", poster: "bladerunner.jpg" },
     { title: "Matrix", poster: "matrix.jpg" },
@@ -33,26 +32,49 @@ const movies = [
     { title: "The Lord of the Rings: The Fellowship of the Ring", poster: "lordoftheringsi.png" },
     { title: "O Senhor dos Anéis: As Duas Torres", poster: "lordoftheringsii.png" },
     { title: "The Lord of the Rings: The Return of the King", poster: "lordoftheringsiii.png" }
-    // Adicione mais filmes conforme necessário
 ];
 
-const moviesList = document.getElementById('movies-list');
+const movieList = document.getElementById('movie-list');
+const movieDetails = document.getElementById('movie-details');
 
+// Function to create movie list items
+function createMovieItem(movie) {
+    const listItem = document.createElement('li');
+    listItem.classList.add('movie-item');
+
+    const img = document.createElement('img');
+    img.src = movie.poster;
+    img.alt = movie.title;
+
+    listItem.appendChild(img);
+
+    // Store movie details in dataset for easy access
+    Object.keys(movie).forEach(key => {
+        listItem.dataset[key] = movie[key];
+    });
+
+    return listItem;
+}
+
+// Function to display movie details when clicked
+function displayMovieDetails(event) {
+    if (event.target.tagName === 'IMG') {
+        const movie = event.target.parentElement.dataset;
+        const detailsHTML = `
+            <h2>${movie.title}</h2>
+            <img src="${movie.poster}" alt="${movie.title}">
+        `;
+        movieDetails.innerHTML = detailsHTML;
+        movieDetails.style.display = 'block';
+    }
+}
+
+// Populate movie list
 movies.forEach(movie => {
-    const movieElement = document.createElement('div');
-    movieElement.classList.add('movie');
-
-    const imgElement = document.createElement('img');
-    imgElement.src = movie.poster;
-    imgElement.alt = movie.title;
-
-    const linkElement = document.createElement('a');
-    linkElement.href = `https://pt.wikipedia.org/wiki/${encodeURIComponent(movie.title)}`;
-    linkElement.textContent = movie.title;
-    linkElement.target = "_blank";
-
-    movieElement.appendChild(imgElement);
-    movieElement.appendChild(linkElement);
-    
-    moviesList.appendChild(movieElement);
+    const movieItem = createMovieItem(movie);
+    movieList.appendChild(movieItem);
 });
+
+// Event listener for displaying movie details
+movieList.addEventListener('click', displayMovieDetails);
+

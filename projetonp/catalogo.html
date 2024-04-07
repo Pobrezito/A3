@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Filmes</title>
-    <style>
-        /* Estilos simples para os filmes */
-        .movie {
-            margin-bottom: 20px;
-        }
-        .movie img {
-            width: 150px;
-            height: auto;
-            display: block;
-            margin-bottom: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="catalogo.css">
+<title>Lista de Filmes</title>
+
 </head>
 <body>
-    <h1>Catálogo de Filmes</h1>
-    <div id="movies-list">
-        <!-- Os filmes serão adicionados aqui pelo JavaScript -->
-    </div>
 
-    <script src="script.js"></script>
+<div class="container">
+    <h1>Lista de Filmes</h1>
+    <ul id="movie-list" class="movie-list">
+        <!-- Movie items will be added here dynamically -->
+    </ul>
+    <div id="movie-details" class="movie-details"></div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
