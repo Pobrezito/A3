@@ -7,6 +7,7 @@ function criarUsuario(body) {
     return { nome: body.name, id: 1 }
 }
 
+
 app.post('/users', (req, res) => {
     //logica para cirar usuario
     const usuario = criarUsuario(req.body);
