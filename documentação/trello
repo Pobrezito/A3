@@ -1,0 +1,65 @@
+Duração da Sprint: 3 semanas
+
+Objetivo da Sprint: Implementar a base funcional do site, incluindo páginas principais, estilo e layout básicos, funcionalidades interativas e integrações externas.
+
+Prioridades da Sprint:
+
+Funcionalidade:Criar as páginas de login, regras, tutorial e perfil do usuário;Implementar o redirecionamento ao clicar em "SEJA NP";Criar o formulário de login com validação;Integrar o link para a comunidade no Discord e o repositório no GitHub.
+
+Usabilidade:Estilizar o cabeçalho, menu de navegação, conteúdo principal e rodapé;Adicionar responsividade para diferentes tamanhos de tela;Implementar animações ou efeitos visuais.
+
+Qualidade:Testar o site em diferentes navegadores;Corrigir problemas de compatibilidade;Revisar o conteúdo textual em todas as páginas.
+Backlog da Sprint:
+
+
+
+Reunião de planejamento da Sprint;
+Definir as tarefas e estimativas de tempo para cada item do Backlog;
+Atribuir responsabilidades aos membros da equipe.
+
+
+
+Desenvolvimento das páginas de login, regras e tutorial.
+Implementação do redirecionamento ao clicar em "SEJA NP".
+Criação do formulário de login com validação.
+Início da estilização do cabeçalho, menu de navegação e conteúdo principal.
+
+
+
+Concluir a estilização do cabeçalho, menu de navegação e conteúdo principal.
+Implementar a responsividade para diferentes tamanhos de tela.
+Adicionar animações ou efeitos visuais.
+Integrar o link para a comunidade no Discord e o repositório no GitHub.
+
+Testar o site em diferentes navegadores.
+Corrigir problemas de compatibilidade.
+Revisar o conteúdo textual em todas as páginas.
+Implementar melhorias sugeridas pelos usuários (feedback).
+
+Reunião de revisão da Sprint:
+Demonstrar o progresso da Sprint para as partes interessadas;
+Coletar feedback e sugestões para as próximas Sprints.
+
+Retrospectiva da Sprint:
+Identificar pontos fortes e fracos da Sprint;
+Definir ações de melhoria para as próximas Sprints.
+
+Considerações Adicionais:
+
+A equipe deve se reunir diariamente para realizar um stand-up meeting, onde cada membro informa seu progresso e identifica impedimentos;
+O Product Owner deve estar disponível para fornecer feedback e aprovar as entregas da sprint;
+A equipe deve utilizar ferramentas de gerenciamento de tarefas para acompanhar o progresso e identificar gargalos.
+
+Recursos Adicionais:
+
+Modelo de Sprint Backlog: URL Sprint Backlog;
+Guia para Planejamento de Sprint: URL Planejamento de Sprint;
+Dicas para Reuniões de Sprint: URL Reuniões de Sprint.
+
+Observações:
+
+Este roteiro é apenas um exemplo e pode ser adaptado às necessidades específicas do projeto;
+É importante manter o foco nas prioridades da Sprint e ajustar o planejamento conforme necessário;
+A comunicação e colaboração entre os membros da equipe são essenciais para o sucesso da Sprint.
+
+https://trello.com/c/hDxV1bHo/2-backlog
