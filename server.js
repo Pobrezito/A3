@@ -18,5 +18,4 @@ app.listen(port, () => {
     console.log(`Servidor Rodando`);
 });
 
-
 module.exports = { criarUsuario}
