@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const movieList = document.querySelector('.movie-list');
+    const descriptionInput = document.getElementById('descriptionInput');
+    const saveButton = document.getElementById('saveButton');
 
     // Array de filmes
     const filmes = [
@@ -38,4 +40,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.body.appendChild(addButton);
+
+    // Carregar descrição do perfil do localStorage, se existir
+    const savedDescription = localStorage.getItem('profileDescription');
+    if (savedDescription) {
+        descriptionInput.value = savedDescription;
+    }
+
+    // Evento para salvar a descrição do perfil
+    saveButton.addEventListener('click', function() {
+        const description = descriptionInput.value;
+        localStorage.setItem('profileDescription', description);
+        alert('Descrição salva com sucesso!');
+    });
 });
