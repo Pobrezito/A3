@@ -1,30 +1,49 @@
-body {
-    font-family: Arial, sans-serif;
+/* Estilo para o fundo preto */
+.background {
+    background-color: black;
+    /* Você pode adicionar outras propriedades de fundo, se desejar */
 }
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+
+/* Estilo para o avatar no canto superior esquerdo */
+.avatar img {
+    max-width: 100px; /* Defina o tamanho máximo desejado */
+    max-height: 100px; /* Defina o tamanho máximo desejado */
 }
-.movie-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-gap: 20px;
-    list-style: none;
-    padding: 0;
-}
-.movie-item {
-    cursor: pointer;
-}
+
+/* Estilo para os cartazes de filmes */
 .movie-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    max-width: 200px; /* Defina o tamanho máximo desejado */
+    max-height: 300px; /* Defina o tamanho máximo desejado */
 }
-.movie-details {
-    display: none;
-    background-color: #f9f9f9;
+
+
+/* Estilo para a descrição e outras informações do perfil */
+.description {
+    margin-top: 20px;
     padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
+    color: white;
+}
+
+/* Estilo para a faixa branca separadora */
+.separator {
+    height: 5px;
+    background-color: white;
+    margin-top: 50%; /* Ajuste conforme necessário */
+}
+
+/* Estilo para o texto neon */
+.neon-text {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    /* Adicione estilos de texto neon conforme necessário */
+}
+
+/* Estilo para a lista de filmes */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* Adicione outros estilos conforme necessário */
 }
