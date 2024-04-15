@@ -1,5 +1,7 @@
 # TRABALHO-A3
 
+DOCUMENTAÇÃO: https://docs.google.com/document/d/13SZk-XrPHawb4Tf1dv2CfQN1XKfNXGsPcN-Tc9iORyk/edit?hl=pt-br#heading=h.2ftgs1g5n8lw
+
 ## Git Semantic Comit
 
 Bem-vindo ao projeto onde você encontrará exemplos de commits que utilizam Git Semantic Comit
