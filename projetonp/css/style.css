@@ -124,3 +124,12 @@ body {
   display: block;
   margin: 0 auto;
 }
+footer {
+  background: linear-gradient(68.15deg, #773641 16.62%, #080403 85.61%);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+}

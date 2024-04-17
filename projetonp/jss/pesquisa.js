@@ -9,7 +9,7 @@ function searchLanguage() {
             languageDetails.innerHTML += `
                 <h2>Python</h2>
                 <div class="language-details">
-                    <img src="fotos/pythonlogo.png" alt="Python Logo" class="language-symbol">
+                    <img src="../fotos/pythonlogo.png" alt="Python Logo" class="language-symbol">
                     <p class="description">Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.</p>
                     <div class="categories">
                         <h3>Ferramentas populares:</h3>
@@ -30,7 +30,7 @@ function searchLanguage() {
             languageDetails.innerHTML += `
                 <h2>JavaScript</h2>
                 <div class="language-details">
-                    <img src="fotos/jslogo.png" alt="JavaScript Logo" class="language-symbol">
+                    <img src="../fotos/jslogo.png" alt="JavaScript Logo" class="language-symbol">
                     <p class="description">JavaScript é uma linguagem de programação interpretada, estruturada e de script com tipagem dinâmica fraca e multiparadigma.</p>
                     <div class="categories">
                         <h3>Ferramentas populares:</h3>
@@ -52,7 +52,7 @@ function searchLanguage() {
             languageDetails.innerHTML += `
                 <h2>Java</h2>
                 <div class="language-details">
-                    <img src="fotos/javalogo.png" alt="Java Logo" class="language-symbol">
+                    <img src="../fotos/javalogo.png" alt="Java Logo" class="language-symbol">
                     <p class="description">Java é uma linguagem de programação orientada a objetos e que foi projetada para ter poucas dependências de implementação.</p>
                     <div class="categories">
                         <h3>Ferramentas populares:</h3>
@@ -73,7 +73,7 @@ function searchLanguage() {
             languageDetails.innerHTML += `
                 <h2>Trello</h2>
                 <div class="language-details">
-                    <img src="fotos/trello.png" alt="Trello Logo" class="language-symbol">
+                    <img src="../fotos/trello.png" alt="Trello Logo" class="language-symbol">
                     <p class="description">O Trello é uma plataforma de gerenciamento de projetos baseada em quadros virtuais. Ele oferece uma abordagem visual e intuitiva para organizar tarefas, projetos e colaboração em equipe.</p>
                     <div class="categories">
                         <h3>Recursos populares:</h3>
@@ -91,7 +91,7 @@ function searchLanguage() {
             languageDetails.innerHTML += `
                 <h2>Jira</h2>
                 <div class="language-details">
-                    <img src="fotos/jira.png" alt="Jira Logo" class="language-symbol">
+                    <img src="../fotos/jira.png" alt="Jira Logo" class="language-symbol">
                     <p class="description">O Jira é uma plataforma de gerenciamento de projetos e acompanhamento de problemas desenvolvida pela Atlassian. Ele é amplamente utilizado por equipes ágeis para planejar, acompanhar e gerenciar projetos de software.</p>
                     <div class="categories">
                         <h3>Recursos populares:</h3>
@@ -109,7 +109,7 @@ function searchLanguage() {
               languageDetails.innerHTML += `
         <h2>Scrum</h2>
         <div class="language-details">
-            <img src="fotos/scrum.png" alt="Scrum Logo" class="language-symbol">
+            <img src="../fotos/scrum.png" alt="Scrum Logo" class="language-symbol">
             <p class="description">Scrum é um framework ágil que se concentra na entrega iterativa e incremental de produtos. Ele é baseado em princípios de transparência, inspeção e adaptação, e é frequentemente utilizado no desenvolvimento de software para lidar com mudanças e incertezas.</p>
             <div class="categories">
                 <h3>Recursos populares:</h3>
@@ -126,7 +126,7 @@ function searchLanguage() {
                       languageDetails.innerHTML += `
                   <h2>Kanban</h2>
                           <div class="language-details">
-             <img src="fotos/kanbanlogo.png" alt="Kanban Logo" class="language-symbol">
+             <img src="../fotos/kanbanlogo.png" alt="Kanban Logo" class="language-symbol">
             <p class="description">Kanban é um método para gerenciar o trabalho com foco na entrega contínua, semelhante ao Scrum, mas com ênfase na visualização do fluxo de trabalho. É baseado em princípios como limitação do trabalho em progresso (WIP), transparência e foco na entrega contínua de valor.</p>
             <div class="categories">
                 <h3>Recursos populares:</h3>
@@ -146,7 +146,7 @@ function searchLanguage() {
             languageDetails.innerHTML += `
                 <h2>Ruby</h2>
                 <div class="language-details">
-                    <img src="fotos/rubylogo.png" alt="Ruby Logo" class="language-symbol">
+                    <img src="../fotos/rubylogo.png" alt="Ruby Logo" class="language-symbol">
                     <p class="description">Ruby é uma linguagem de programação interpretada de alto nível, puramente orientada a objetos e de fácil leitura e escrita.</p>
                     <div class="categories">
                         <h3>Ferramentas populares:</h3>
