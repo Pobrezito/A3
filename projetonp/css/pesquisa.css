@@ -1,0 +1,103 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif; /* Exemplo de fonte que combina com algo tecnológico */
+}
+
+.search-bar {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.language-details {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.language-details h2 {
+    font-size: 24px;
+}
+
+.language-details .language-symbol {
+    float: right;
+    margin-left: 20px;
+    max-width: 150px; /* Define o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.language-details .description {
+    margin-bottom: 20px;
+}
+
+.language-details .tools {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.language-details .tools h3 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.language-details .topics {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-details .topics h4 {
+    font-size: 18px;
+}
+
+.language-details .topics ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.language-details .topics ul li {
+    font-size: 16px;
+}
+
+/* Estilo do link para o nome Django */
+.language-link {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.language-link:hover {
+    color: #007bff;
+}
