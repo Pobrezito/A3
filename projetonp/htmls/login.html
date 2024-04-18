@@ -1,54 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt=br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Login</title>
+
+    <!--CSS-->
     <link rel="stylesheet" href="../css/login.css">
-    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/media.css">
+    
+
+    <!--JS & jQuery-->
+    <script type="text/javascript" src="../jss/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="box">
-        <div class="container">
-            <div class="top-header">           
-                <header>CODING PLANET</header>
-            </div>
-            <div class="input-field">
-                <input type="text" id="login" class="input" placeholder="usuario" required>
-                <i class="bx bx user"></i>
-            </div>
-            <div class="input-field"> 
-                <input type="password" id="senha" class="input" placeholder="Contraseña" required>
-            </div>
-            <div class="input-field">
-                <input type="button" class="submit" value="Login" onclick="loginRedirect()">
-            </div>
-            
-            <div class="bottom">
-                <div class="left">
-                    <input type="checkbox" id="check">
-                    <label for="check"> Lembrar-me</label>
+    <div id="container">
+        <div class="banner" style="text-align: center;">
+            <img src="../fotos/rocket.png" alt="imagem-login" width="270">
+            <p id="titulo">coding planet</p>
+            <p style="color: #fff; font-weight: 400;">
+                Seja bem vindo, explore o universo da programação 
+                <br>no nosso site, Coding Planet. Aqui, você encontrará
+                <br>uma variedade de ferramentas projetadas para 
+                <br>ajudá-lo a aprimorar suas habilidades de programação.
+            </p>
+        </div>
+
+        <div class="box-login">
+            <h1>
+                Olá!<br>
+                Seja bem vindo de volta.
+            </h1>
+
+            <div class="box">
+                <h2>faça o seu login agora</h2>
+                <input type="text" name="username" id="username" placeholder="username">
+                <input type="password" name="password" id="password" placeholder="password">
+                
+                <a href="password.html">
+                    <p>Esqueceu a sua senha?</p>
+                </a>
+
+                <button>Login</button>
+                
+                <a href="account.html">
+                    <p>Criar uma conta</p>
+                </a>
+
+                <div class="social">
+                  
+                    <a href="https://coding-planet.in/" target="_blank">
+                        <img src="../fotos/google.png" alt="Google">
+                    </a>
+                    <a href="https://discord.gg/4FFxNVgXhQ" target="_blank">
+                        <img src="../fotos/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://github.com/Pobrezito/A3" target="_blank">
+                        <img src="../fotos/github.png" alt="GitHub">
+                    </a>
                 </div>
-                <div class="right">
-                    <label><a href="#">Esqueceu a senha?</a></label>
-                </div>
+                
             </div>
         </div>
     </div>
-
-    <script>
-        function loginRedirect() {
-            var loginValue = document.getElementById("login").value;
-            var senhaValue = document.getElementById("senha").value;
-            
-            // Aqui você pode adicionar a lógica de verificação do login
-
-            // Supondo que o login foi bem-sucedido, redirecionar para outra página em uma nova aba
-            window.open("pesquisa.html", "_blank");
-        }
-    </script>
 </body>
 </html>

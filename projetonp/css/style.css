@@ -9,7 +9,7 @@
 
 body {
   font-size: 100%;
-  background: linear-gradient(68.15deg, #773641 16.62%, #080403 85.61%);
+ background-color: #080403;
 }
 
 .cabecalho {
@@ -18,6 +18,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 24px;
+  background: linear-gradient(68.15deg, #1a1718 16.62%, #2b2828 85.61%);
 }
 
 .cabecalho-imagem {
@@ -125,7 +126,7 @@ body {
   margin: 0 auto;
 }
 footer {
-  background: linear-gradient(68.15deg, #773641 16.62%, #080403 85.61%);
+  background: linear-gradient(68.15deg, #1a1718 16.62%, #2b2828 85.61%);
   color: #fff;
   text-align: center;
   padding: 10px;
