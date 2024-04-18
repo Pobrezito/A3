@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="htmls/login.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/login.css">
     <title>Sign up</title>
@@ -25,8 +24,9 @@
                 <input type="password" id="senha" class="input" placeholder="Contraseña" required>
             </div>
             <div class="input-field">
-                <input type="submit" class="submit" value="Login" onclick="logar(); return false">
+                <input type="button" class="submit" value="Login" onclick="loginRedirect()">
             </div>
+            
             <div class="bottom">
                 <div class="left">
                     <input type="checkbox" id="check">
@@ -38,5 +38,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function loginRedirect() {
+            var loginValue = document.getElementById("login").value;
+            var senhaValue = document.getElementById("senha").value;
+            
+            // Aqui você pode adicionar a lógica de verificação do login
+
+            // Supondo que o login foi bem-sucedido, redirecionar para outra página em uma nova aba
+            window.open("pesquisa.html", "_blank");
+        }
+    </script>
 </body>
 </html>

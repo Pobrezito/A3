@@ -1,11 +1,4 @@
-function logar(){
-    let login = document.getElementById('login').value;
-    let senha = document.getElementById('senha').value;
-
-    if(login == "admin" && senha == "admin") {
-        alert("Logado com sucesso")
-        location.href = 'index.html'
-    }else{
-        alert("Usuário ou senha incorreta")
-    }
-}
+document.getElementById("loginButton").addEventListener("click", function() {
+    // Supondo que o login foi bem-sucedido, redirecione para a página desejada
+    window.location.href = "../login/pesquisa.html";
+});
