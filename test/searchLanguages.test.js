@@ -6,3 +6,4 @@ test('searchLanguages retorna os idiomas correspondentes à busca', () => {
   const expectedLanguages = ['JavaScript', 'Java'];
   expect(searchLanguages(languages, searchTerm)).toEqual(expectedLanguages);
 });
+
