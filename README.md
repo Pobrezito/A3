@@ -26,12 +26,12 @@ Certifique-se de ter o Node.js instalado, Você pode baixa-lo em [nodejs.org](ht
  1. Clone este repositório:
 
   ```bash
-git clone https://github.com/Kevin-Heidorn/TRABALHO-A3
+git clone https://github.com/Pobrezito/A3.git
 
  2. Navegue até o diretorio do projeto:
 
   ```bash
- cd TRABALHO-A3
+ cd A3
 
  3. Instale as dependencias
 
