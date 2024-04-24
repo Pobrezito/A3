@@ -1,9 +1,9 @@
-const searchLanguages = require('./searchLanguages');
+const searchLanguage = require('./searchLanguage');
 
-test('searchLanguages retorna os idiomas correspondentes à busca', () => {
+test('searchLanguage retorna os idiomas correspondentes à busca', () => {
   const languages = ['JavaScript', 'Python', 'Java', 'C++', 'Ruby', 'Typescript'];
   const searchTerm = 'Ja';
-  const expectedLanguages = ['JavaScript', 'Java'];
-  expect(searchLanguages(languages, searchTerm)).toEqual(expectedLanguages);
+  const expectedLanguage = ['JavaScript', 'Java'];
+  expect(searchLanguage(language, searchTerm)).toEqual(expectedLanguage);
 });
 
