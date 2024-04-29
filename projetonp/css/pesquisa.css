@@ -6,7 +6,8 @@ body {
 
 header {
     text-align: center;
-    padding: 20px 0;
+    position: relative;
+    margin-top: 0%;
 }
 
 h1 {
@@ -17,21 +18,34 @@ h1 {
 /* Estilo para a barra de navegação */
 .navbar {
     background-color: #333; /* Cor de fundo da barra de navegação */
-    padding: 0px 0px; /* Espaçamento interno */
-    display: flex; /* Layout flexível para alinhar os itens horizontalmente */
-    justify-content: space-between; /* Alinha os itens ao longo do eixo principal (horizontalmente) */
+    padding: 10px 20px; /* Espaçamento interno */
+    display: flex; /* Layout flexível para alinhar os itens */
+    justify-content: space-between; /* Alinha os itens ao longo do eixo principal */
+    align-items: center; /* Alinha os itens verticalmente */
 }
 
-/* Estilo para o logotipo/título na barra de navegação */
+/* Estilo para a logo e o texto "Coding Planet" */
+.navbar-brand {
+    display: flex; /* Layout flexível para alinhar os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
 .navbar-brand h1 {
     margin: 0; /* Remove margens padrão */
-    color: #04ff15; /* Cor do texto */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilo para a área transparente */
+.logo-area {
+    width: 50px; /* Largura da área transparente */
+    height: 50px; /* Altura da área transparente */
+    background-color: transparent; /* Cor de fundo transparente */
 }
 
 /* Estilo para a barra de pesquisa na barra de navegação */
 .navbar-search input[type="text"] {
-    width: 250px; /* Largura da barra de pesquisa */
-    padding: 10px; /* Espaçamento interno */
+    width: 200px; /* Largura da barra de pesquisa */
+    padding: 8px; /* Espaçamento interno */
     border: none; /* Remove a borda */
     border-radius: 5px; /* Adiciona bordas arredondadas */
 }
@@ -58,6 +72,11 @@ h1 {
     float: left; /* Alinha à esquerda */
 }
 
+.navbar-search {
+    display: flex; /* Layout flexível para alinhar os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
 /* Estilo para os botões */
 .navbar-buttons {
     display: flex; /* Layout flexível para alinhar os botões horizontalmente */
@@ -75,14 +94,14 @@ h1 {
 }
 
 .navbar-button:not(:last-child) {
-    margin-right: 0px; /* Margem à direita para separar os botões */
+    margin-right: 10px; /* Margem à direita para separar os botões */
 }
 
 /* Estilo para a linha vertical */
 .vertical-line {
-    height: 80px; /* Altura da linha vertical */
-    border-left: 3px solid #ccc; /* Linha vertical com cor cinza */
-    margin: 0 20px; /* Margem horizontal para separar a linha das bordas dos botões */
+    height: 30px; /* Altura da linha vertical */
+    border-left: 1px solid #ccc; /* Linha vertical com cor cinza */
+    margin: 0 10px; /* Margem horizontal para separar a linha das bordas dos botões */
 }
 
 .search-bar {
