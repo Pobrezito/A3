@@ -14,11 +14,82 @@ h1 {
     font-family: "Roboto", sans-serif; /* Exemplo de fonte que combina com algo tecnológico */
 }
 
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    padding: 0px 0px; /* Espaçamento interno */
+    display: flex; /* Layout flexível para alinhar os itens horizontalmente */
+    justify-content: space-between; /* Alinha os itens ao longo do eixo principal (horizontalmente) */
+}
+
+/* Estilo para o logotipo/título na barra de navegação */
+.navbar-brand h1 {
+    margin: 0; /* Remove margens padrão */
+    color: #04ff15; /* Cor do texto */
+}
+
+/* Estilo para a barra de pesquisa na barra de navegação */
+.navbar-search input[type="text"] {
+    width: 250px; /* Largura da barra de pesquisa */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+.navbar-search button {
+    padding: 8px 15px; /* Espaçamento interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    color: #fff; /* Cor do texto */
+    cursor: pointer; /* Cursor de apontar */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.navbar-search button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo para a área transparente */
+.logo-area {
+    width: 50px; /* Largura da área transparente */
+    height: 50px; /* Altura da área transparente */
+    background-color: transparent; /* Cor de fundo transparente */
+    float: left; /* Alinha à esquerda */
+}
+
+/* Estilo para os botões */
+.navbar-buttons {
+    display: flex; /* Layout flexível para alinhar os botões horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.navbar-button {
+    padding: 8px 15px; /* Espaçamento interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    color: #fff; /* Cor do texto */
+    cursor: pointer; /* Cursor de apontar */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.navbar-button:not(:last-child) {
+    margin-right: 0px; /* Margem à direita para separar os botões */
+}
+
+/* Estilo para a linha vertical */
+.vertical-line {
+    height: 80px; /* Altura da linha vertical */
+    border-left: 3px solid #ccc; /* Linha vertical com cor cinza */
+    margin: 0 20px; /* Margem horizontal para separar a linha das bordas dos botões */
+}
+
 .search-bar {
     margin: 20px auto;
     width: 80%;
     max-width: 600px;
-    text-align: center;
+    text-align: right;
 }
 
 .search-bar input {
