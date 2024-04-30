@@ -102,7 +102,7 @@ h1 {
 
 /* Estilo para a barra de pesquisa na barra de navegação */
 .navbar-search input[type="text"] {
-    width: 400px; /* Largura da barra de pesquisa */
+    width: 200px; /* Largura da barra de pesquisa */
     padding: 8px; /* Espaçamento interno */
     border: none; /* Remove a borda */
     border-radius: 5px; /* Adiciona bordas arredondadas */
