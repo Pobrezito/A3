@@ -127,9 +127,12 @@ body {
                     align-items: center;
                 }
 
-                    .social img {
-                        cursor: pointer;
-                    }
+                .social img {
+                    cursor: pointer;
+                    width: 42px; /* Define a largura comum para todas as logos */
+                    height: 42px; /* Define a altura comum para todas as logos */
+                }
+                
 
             .box-login .box-account {
                 width: 80%;
@@ -156,3 +159,4 @@ body {
         justify-content: center;
         align-items: center;
     }
+    
