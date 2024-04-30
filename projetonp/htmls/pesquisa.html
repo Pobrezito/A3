@@ -21,23 +21,29 @@
             <!-- Botões da barra de navegação -->
             <div class="navbar-buttons">
                 <!-- Botão "Sugestões" e separador -->
-                <div class="vertical-line"></div> <!-- Linha vertical -->
+          
                 <!-- Botão "Engenharia de Software" e separador -->
                 <div class="navbar-button" id="tools">Engenharia de Software</div>
-                <div class="vertical-line"></div> <!-- Linha vertical -->
+
+                <div class="navbar-button1" id="tools">Linguagens</div>
+
+
             </div>
             <!-- Barra de pesquisa -->
-            <div class="navbar-search">
-                <input type="text" id="searchInput" placeholder="Pesquisar linguagem...">
-                <button onclick="searchLanguage()">Pesquisar</button>
-            </div>
+           
+            
         </nav>
     </header>
     <!-- Área principal do conteúdo -->
     <main>
+        <div class="navbar-search">
+            <input type="text" id="searchInput" placeholder="Pesquisar linguagem...">
+            <button onclick="searchLanguage()">Pesquisar</button>
+        </div>
         <div class="language-details" id="languageDetails">
             <!-- Os detalhes da linguagem serão inseridos dinamicamente aqui -->
         </div>
+        
     </main>
     <!-- Importa os scripts JavaScript -->
     <script src="../jss/pesquisa.js"></script>

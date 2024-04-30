@@ -16,7 +16,7 @@ function showToolsOptions(event) {
 
     // Adiciona as opções de ferramentas
     tooltip.innerHTML = `
-        <h3 class="tool-category monitoracao">Monitoração</h3>
+        <h3 class="tool-category monitoracao">Monitoramento</h3>
         <div class="tool-option" onclick="redirectToTool('Trello')">
             <span>Trello</span>
         </div>
