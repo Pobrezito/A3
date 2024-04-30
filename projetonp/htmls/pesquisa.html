@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Configurações básicas do documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Planet</title>
+    <!-- Importa o arquivo CSS para estilizar a página -->
     <link rel="stylesheet" href="../css/pesquisa.css">
 </head>
 <body>
+    <!-- Cabeçalho da página -->
     <header>
+        <!-- Barra de navegação -->
         <nav class="navbar">
+            <!-- Marca e logo do site -->
             <div class="navbar-brand">
-                <div class="logo-area"></div> <!-- Área transparente para a logo -->
                 <h1>Coding Planet</h1>
+                <img src="../fotos/codingplanet.png" alt="Coding Planet Logo" class="logo"> <!-- Logo do Coding Planet -->
             </div>
+            <!-- Botões da barra de navegação -->
             <div class="navbar-buttons">
-                <div class="navbar-button" id="suggestions">Sugestões</div>
+                <!-- Botão "Sugestões" e separador -->
                 <div class="vertical-line"></div> <!-- Linha vertical -->
-                <div class="navbar-button" id="tools">Ferramentas Eng. de Software</div>
+                <!-- Botão "Engenharia de Software" e separador -->
+                <div class="navbar-button" id="tools">Engenharia de Software</div>
                 <div class="vertical-line"></div> <!-- Linha vertical -->
-                <div class="navbar-button" id="blank">Em Branco</div>
             </div>
+            <!-- Barra de pesquisa -->
             <div class="navbar-search">
                 <input type="text" id="searchInput" placeholder="Pesquisar linguagem...">
                 <button onclick="searchLanguage()">Pesquisar</button>
             </div>
         </nav>
     </header>
+    <!-- Área principal do conteúdo -->
     <main>
         <div class="language-details" id="languageDetails">
             <!-- Os detalhes da linguagem serão inseridos dinamicamente aqui -->
         </div>
     </main>
+    <!-- Importa os scripts JavaScript -->
     <script src="../jss/pesquisa.js"></script>
+    <script src="../jss/tooltip.js"></script> <!-- Adicionando o script para o tooltip -->
 </body>
 </html>

@@ -1,27 +1,72 @@
+/* Estilos para o corpo da página */
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    /* Define uma imagem de fundo para o corpo */
+    background-image: url('../fotos/pesquisa_background.png');
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+    background-position: center; /* Centraliza a imagem no corpo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-attachment: fixed; /* Fixa a imagem de fundo */
+    color: #ffffff; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte do texto */
 }
 
+/* Estilos para o cabeçalho da página */
 header {
-    text-align: center;
-    position: relative;
-    margin-top: 0%;
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    position: relative; /* Define a posição relativa para posicionamento absoluto dos elementos filhos */
+    margin-top: 0%; /* Margem superior */
 }
 
+/* Estilos para o título principal */
 h1 {
-    font-size: 36px;
-    font-family: "Roboto", sans-serif; /* Exemplo de fonte que combina com algo tecnológico */
+    font-size: 36px; /* Tamanho da fonte */
+    font-family: "Roboto", sans-serif; /* Fonte */
+    font-weight: bold; /* Negrito */
 }
 
-/* Estilo para a barra de navegação */
+/* Estilos para a barra de navegação */
 .navbar {
-    background-color: #333; /* Cor de fundo da barra de navegação */
-    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #010101; /* Cor de fundo */
+    padding: 0px 10px; /* Espaçamento interno */
     display: flex; /* Layout flexível para alinhar os itens */
     justify-content: space-between; /* Alinha os itens ao longo do eixo principal */
     align-items: center; /* Alinha os itens verticalmente */
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    z-index: 9999;
+}
+
+.tool-category {
+    margin-bottom: 10px;
+}
+
+.monitoracao {
+    text-align: center;
+    color:#00ff00
+}
+
+.desenvolvimento-agil {
+    text-align: center;
+    color:#00ff00
+}
+
+.tool-option {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.tool-option:hover {
+    background-color: #101010;
+}
+
+.tool-option span {
+    cursor: pointer;
 }
 
 /* Estilo para a logo e o texto "Coding Planet" */
@@ -31,9 +76,15 @@ h1 {
 }
 
 .navbar-brand h1 {
-    margin: 0; /* Remove margens padrão */
-    color: #fff; /* Cor do texto */
+    margin: 1;
+    padding: 5px 10px; /* Adiciona preenchimento ao redor do texto */
+    color: transparent; /* Torna o texto transparente */
+    background-image: url('../fotos/binary.gif'); /* Adiciona o GIF como plano de fundo */
+    background-size: cover; /* Ajusta o tamanho do plano de fundo para cobrir todo o elemento */
+    -webkit-background-clip: text; /* Faz com que o plano de fundo seja cortado apenas pelo texto */
+    background-clip: text; /* Faz com que o plano de fundo seja cortado apenas pelo texto */
 }
+
 
 /* Estilo para a área transparente */
 .logo-area {
@@ -42,34 +93,43 @@ h1 {
     background-color: transparent; /* Cor de fundo transparente */
 }
 
+.logo {
+    width: 80px; /* Largura da logo */
+    height: auto; /* Altura ajustada automaticamente */
+    margin-left: 10px;
+}
+
+
 /* Estilo para a barra de pesquisa na barra de navegação */
 .navbar-search input[type="text"] {
-    width: 200px; /* Largura da barra de pesquisa */
+    width: 400px; /* Largura da barra de pesquisa */
     padding: 8px; /* Espaçamento interno */
     border: none; /* Remove a borda */
     border-radius: 5px; /* Adiciona bordas arredondadas */
+    margin-right: 5px;
+    text-shadow: 5 5 5px #000000;
 }
 
 .navbar-search button {
     padding: 8px 15px; /* Espaçamento interno do botão */
-    background-color: #007bff; /* Cor de fundo do botão */
+    background-color: #04ff00;
+    font-weight: bold;
+    font-style: comic;
+    font-size: large;
     border: none; /* Remove a borda */
     border-radius: 5px; /* Adiciona bordas arredondadas */
-    color: #fff; /* Cor do texto */
+    color: #ffffff; /* Cor do texto */
     cursor: pointer; /* Cursor de apontar */
     transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .navbar-search button:hover {
-    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
-}
-
-/* Estilo para a área transparente */
-.logo-area {
-    width: 50px; /* Largura da área transparente */
-    height: 50px; /* Altura da área transparente */
-    background-color: transparent; /* Cor de fundo transparente */
-    float: left; /* Alinha à esquerda */
+    background-color: #007b04; /* Cor de fundo do botão ao passar o mouse */
 }
 
 .navbar-search {
@@ -84,11 +144,8 @@ h1 {
 }
 
 .navbar-button {
-    padding: 8px 15px; /* Espaçamento interno do botão */
-    background-color: #007bff; /* Cor de fundo do botão */
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    color: #fff; /* Cor do texto */
+    padding: 0px 0px; /* Espaçamento interno do botão */
+    color: #ffffff; /* Cor do texto */
     cursor: pointer; /* Cursor de apontar */
     transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
 }
@@ -99,15 +156,15 @@ h1 {
 
 /* Estilo para a linha vertical */
 .vertical-line {
-    height: 30px; /* Altura da linha vertical */
-    border-left: 1px solid #ccc; /* Linha vertical com cor cinza */
+    height: 80px; /* Altura da linha vertical */
+    border-left: 3px solid #ccc; /* Linha vertical com cor cinza */
     margin: 0 10px; /* Margem horizontal para separar a linha das bordas dos botões */
 }
 
 .search-bar {
     margin: 20px auto;
     width: 80%;
-    max-width: 600px;
+    max-width: 300px;
     text-align: right;
 }
 
@@ -139,7 +196,7 @@ h1 {
 }
 
 .language-details h2 {
-    font-size: 24px;
+    font-size: 84px;
 }
 
 .language-details .language-symbol {
