@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@
 
 body {
   font-size: 100%;
- background-color: #02030f;
+ background-color: #45254d;
 }
 
 .cabecalho {
@@ -18,7 +17,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 24px;
-  background: linear-gradient(68.15deg, #02030f 16.62%, #2b2828 85.61%);
+  background: linear-gradient(68.15deg, #0b0f3a 16.62%, #633283 85.61%);
 }
 
 .cabecalho-imagem {
@@ -70,20 +69,20 @@ body {
 }
 
 .conteudo-principal-escrito-botao {
-  background-color: #ECD6C4;
+  background-color: #fff;
   width: 180px;
   height: 60px;
   border: none;
-  box-shadow: 4px 5px 4px rgba(230, 7, 7, 0.25);
+  box-shadow: 4px 5px 4px rgba(255, 252, 252, 0.25);
   border-radius: 20px;
   font-family: 'Sarala', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #2F2325;
+  color: #7c3d88;
 }
 
 .conteudo-principal-escrito-botao:hover {
-  background-color: rgba(235, 223, 213, 0.53);
+  background-color: rgba(83, 70, 160, 0.53);
 }
 
 .conteudo-principal-imagem {
@@ -126,7 +125,7 @@ body {
   margin: 0 auto;
 }
 footer {
-  background: linear-gradient(68.15deg, #1a1718 16.62%, #2b2828 85.61%);
+  background: linear-gradient(68.15deg, #0b0f3a 16.62%, #633283 85.61%);
   color: #fff;
   text-align: center;
   padding: 10px;

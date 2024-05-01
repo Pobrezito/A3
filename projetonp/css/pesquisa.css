@@ -15,6 +15,7 @@ header {
     text-align: center; /* Centraliza o conteúdo do cabeçalho */
     position: relative; /* Define a posição relativa para posicionamento absoluto dos elementos filhos */
     margin-top: 0%; /* Margem superior */
+
 }
 
 /* Estilos para o título principal */
@@ -26,11 +27,19 @@ h1 {
 
 /* Estilos para a barra de navegação */
 .navbar {
-    background-color: #010101; /* Cor de fundo */
+    background: linear-gradient(68.15deg, #0b0f3a 16.62%, #633283 85.61%);
     padding: 0px 10px; /* Espaçamento interno */
     display: flex; /* Layout flexível para alinhar os itens */
     justify-content: space-between; /* Alinha os itens ao longo do eixo principal */
     align-items: center; /* Alinha os itens verticalmente */
+    margin-left: -1%;
+    width: 1310px; /* Largura da área transparente */
+    height: 100px; /* Altura da área transparente */
+    margin-top: -1%;
+    margin-left: -1%;
+    
+
+    
 }
 
 .tooltip {
@@ -39,6 +48,7 @@ h1 {
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     z-index: 9999;
+    border-radius: 5%;
 }
 
 .tool-category {
@@ -47,12 +57,12 @@ h1 {
 
 .monitoracao {
     text-align: center;
-    color:#00ff00
+    color: #8b3fb8
 }
 
 .desenvolvimento-agil {
     text-align: center;
-    color:#00ff00
+    color: #8b3fb8
 }
 
 .tool-option {
@@ -78,64 +88,26 @@ h1 {
 .navbar-brand h1 {
     margin: 1;
     padding: 5px 10px; /* Adiciona preenchimento ao redor do texto */
-    color: transparent; /* Torna o texto transparente */
-    background-image: url('../fotos/binary.gif'); /* Adiciona o GIF como plano de fundo */
+     color: #fff;    
     background-size: cover; /* Ajusta o tamanho do plano de fundo para cobrir todo o elemento */
     -webkit-background-clip: text; /* Faz com que o plano de fundo seja cortado apenas pelo texto */
     background-clip: text; /* Faz com que o plano de fundo seja cortado apenas pelo texto */
 }
 
 
-/* Estilo para a área transparente */
-.logo-area {
-    width: 50px; /* Largura da área transparente */
-    height: 50px; /* Altura da área transparente */
-    background-color: transparent; /* Cor de fundo transparente */
-}
-
-.logo {
-    width: 80px; /* Largura da logo */
-    height: auto; /* Altura ajustada automaticamente */
-    margin-left: 10px;
-}
-
-
 /* Estilo para a barra de pesquisa na barra de navegação */
 .navbar-search input[type="text"] {
-    width: 200px; /* Largura da barra de pesquisa */
+    width: 500px; /* Largura da barra de pesquisa */
     padding: 8px; /* Espaçamento interno */
     border: none; /* Remove a borda */
     border-radius: 5px; /* Adiciona bordas arredondadas */
     margin-right: 5px;
     text-shadow: 5 5 5px #000000;
+    box-shadow: #000000;
 }
 
-.navbar-search button {
-    padding: 8px 15px; /* Espaçamento interno do botão */
-    background-color: #04ff00;
-    font-weight: bold;
-    font-style: comic;
-    font-size: large;
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    color: #ffffff; /* Cor do texto */
-    cursor: pointer; /* Cursor de apontar */
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-}
 
-.navbar-search button:hover {
-    background-color: #005f03; /* Cor de fundo do botão ao passar o mouse */
-}
 
-.navbar-search {
-    display: flex; /* Layout flexível para alinhar os itens */
-    align-items: center; /* Alinha os itens verticalmente */
-}
 
 /* Estilo para os botões */
 .navbar-buttons {
@@ -187,7 +159,7 @@ h1 {
 
 .navbar-search button {
     padding: 10px 20px;
-    background-color:#04ff03;
+    background-color:#8b3fb8;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -196,7 +168,7 @@ h1 {
 }
 
 .navbar-search button:hover {
-    background-color: #3f643e;
+    background-color: rgb(72, 48, 117)
 } 
 
 .language-details {
@@ -250,11 +222,11 @@ h1 {
 
 /* Estilo do link para o nome Django */
 .language-link {
-    color: blue;
+    color: rgb(114, 45, 146);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .language-link:hover {
-    color: #007bff;
+    color: #793694;
 }
