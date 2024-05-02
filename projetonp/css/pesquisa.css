@@ -6,7 +6,7 @@
   }
 body {
     /* Define uma imagem de fundo para o corpo */
-    background-image: url('../fotos/pesquisa_background.png');
+    background-color: #000000;
     background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
     background-position: center; /* Centraliza a imagem no corpo */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
