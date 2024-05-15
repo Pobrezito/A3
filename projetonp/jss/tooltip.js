@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
     // Botão "Engenharia de Software"
-    document.getElementById("tools").addEventListener("mouseover", function() {
+    document.getElementById("tools").addEventListener("mouseover", function(event) {
         showToolsOptions(event);
     });
-
 });
 
 // Função para mostrar as opções de ferramentas ao passar o mouse sobre "Engenharia de Software"
@@ -54,7 +52,12 @@ function showToolsOptions(event) {
 
     // Adiciona um evento para remover a tooltip quando o mouse sai da própria janela
     document.addEventListener("mouseleave", function(event) {
-        if (event.clientY < tooltip.offsetTop || event.clientY > tooltip.offsetTop + tooltip.offsetHeight || event.clientX < tooltip.offsetLeft || event.clientX > tooltip.offsetLeft + tooltip.offsetWidth) {
+        if (
+            event.clientY < tooltip.offsetTop ||
+            event.clientY > tooltip.offsetTop + tooltip.offsetHeight ||
+            event.clientX < tooltip.offsetLeft ||
+            event.clientX > tooltip.offsetLeft + tooltip.offsetWidth
+        ) {
             tooltip.remove();
         }
     });
