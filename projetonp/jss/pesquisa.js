@@ -68,6 +68,27 @@ function searchLanguage() {
                 </div>
             `;
             break;
+
+        case "c#":
+            languageDetails.innerHTML += `
+                <h2>C#</h2>
+                <div class="language-details">
+                    <img src="../fotos/csharplogo.png" alt="C# Logo" class="language-symbol">
+                    <p class="description">C# é uma linguagem de programação moderna, orientada a objetos, e desenvolvida pela Microsoft como parte da plataforma .NET.</p>
+                    <div class="categories">
+                        <h3>Ferramentas populares:</h3>
+                        <ul>
+                            <li><a href="https://dotnet.microsoft.com/">.NET</a>: Plataforma de desenvolvimento de software da Microsoft.</li>
+                            <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a>: IDE da Microsoft para desenvolvimento em C# e outras linguagens.</li>
+                            <li><a href="https://github.com/dotnet/aspnetcore">ASP.NET Core</a>: Framework de desenvolvimento web para C#.</li>
+                            <li><a href="https://www.jetbrains.com/rider/">Rider</a>: IDE multiplataforma da JetBrains para desenvolvimento em .NET.</li>
+                            <li><a href="https://www.nuget.org/">NuGet</a>: Gerenciador de pacotes para a plataforma .NET.</li>
+                            <li><a href="https://www.mono-project.com/">Mono</a>: Implementação de código aberto da plataforma .NET.</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+            break;
          
         case "ruby":
             languageDetails.innerHTML += `
