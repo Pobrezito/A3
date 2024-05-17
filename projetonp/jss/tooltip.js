@@ -48,7 +48,7 @@ function showToolsOptions(event) {
     var buttonRect = event.target.getBoundingClientRect();
     var distanceFromButton = 20; // Altere esse valor para ajustar a distância
     tooltip.style.top = (buttonRect.bottom + distanceFromButton) + "px"; // Ajuste a distância vertical
-    tooltip.style.left = buttonRect.left + "px";
+    tooltip.style.left = (buttonRect.left - (tooltip.offsetWidth - buttonRect.width) / 2) + "px";
 
     // Adiciona um evento para remover a tooltip quando o mouse sai da própria janela
     document.addEventListener("mouseleave", function(event) {
