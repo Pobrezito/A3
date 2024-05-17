@@ -73,7 +73,7 @@ function searchLanguage() {
             languageDetails.innerHTML += `
                 <h2>C#</h2>
                 <div class="language-details">
-                    <img src="../fotos/csharplogo.png" alt="C# Logo" class="language-symbol">
+                    <img src="../fotos/csharplogo.png" alt="Csharp Logo" class="language-symbol">
                     <p class="description">C# é uma linguagem de programação moderna, orientada a objetos, e desenvolvida pela Microsoft como parte da plataforma .NET.</p>
                     <div class="categories">
                         <h3>Ferramentas populares:</h3>
