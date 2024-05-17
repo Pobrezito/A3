@@ -9,7 +9,7 @@
 
 body {
   font-size: 100%;
-  background-color: #45254d;
+  background-color: black;
 }
 
 .cabecalho {
@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 24px;
-  background: linear-gradient(68.15deg, #0b0f3a 16.62%, #633283 85.61%);
+  background: linear-gradient(68.15deg, #1d212d 16.62%, #000008 85.61%);
 }
 
 .cabecalho-imagem {
@@ -64,7 +64,7 @@ body {
   font-family: 'Righteous', cursive;
   font-weight: 400;
   font-size: 48px;
-  color: #FFF2E7;
+  color: #000000;
 }
 
 .conteudo-principal-escrito-subtitulo {
@@ -84,7 +84,7 @@ body {
   font-family: 'Sarala', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #7c3d88;
+  color: #000000;
 }
 
 .conteudo-principal-escrito-botao:hover {
@@ -124,7 +124,7 @@ body {
 }
 
 footer {
-  background: linear-gradient(68.15deg, #0b0f3a 16.62%, #633283 85.61%);
+  background: linear-gradient(68.15deg, #1d212d 16.62%, #000008 85.61%);
   color: #fff;
   text-align: center;
   padding: 10px;

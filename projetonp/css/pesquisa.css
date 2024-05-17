@@ -6,7 +6,7 @@
   }
 body {
     /* Define uma imagem de fundo para o corpo */
-    background-color: #000000;
+    background-color: #000008;
     background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
     background-position: center; /* Centraliza a imagem no corpo */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
@@ -32,7 +32,7 @@ h1 {
 
 /* Estilos para a barra de navegação */
 .navbar {
-    background: linear-gradient(68.15deg, #0b0f3a 16.62%, #633283 85.61%);
+    background: linear-gradient(68.15deg, #5b6166 16.62%, #1b213c 85.61%);
     padding: 0px 10px; /* Espaçamento interno */
     display: flex; /* Layout flexível para alinhar os itens */
     justify-content: space-between; /* Alinha os itens ao longo do eixo principal */
@@ -41,11 +41,7 @@ h1 {
     width: 100vw; /* Largura da área transparente */
     height: 100px; /* Altura da área transparente */
     margin-top: -1%;
-    margin-left: 0%;
-  
-    
-
-    
+    margin-left: 0%;   
 }
 
 .tooltip {
@@ -63,12 +59,12 @@ h1 {
 
 .monitoracao {
     text-align: center;
-    color: #8b3fb8
+    color:#6d6eb8
 }
 
 .desenvolvimento-agil {
     text-align: center;
-    color: #8b3fb8
+    color: #6d6eb8
 }
 
 .tool-option {
@@ -108,8 +104,8 @@ h1 {
     border: none; /* Remove a borda */
     border-radius: 5px; /* Adiciona bordas arredondadas */
     margin-right: 5px;
-    text-shadow: 5 5 5px #000000;
-    box-shadow: #000000;
+    text-shadow: 5 5 5px #6d6eb8;
+    box-shadow: #6d6eb8;
 }
 
 
@@ -165,7 +161,7 @@ h1 {
 
 .navbar-search button {
     padding: 10px 20px;
-    background-color:#8b3fb8;
+    background-color:#6d6eb8;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -174,7 +170,7 @@ h1 {
 }
 
 .navbar-search button:hover {
-    background-color: rgb(72, 48, 117)
+    background-color: #6d6eb8
 } 
 
 .language-details {
