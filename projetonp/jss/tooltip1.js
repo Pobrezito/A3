@@ -14,7 +14,7 @@ function showLanguagesOptions(event) {
 
     // Adiciona as opções de linguagens
     tooltip.innerHTML = `
-        <h3 class="tool-category">Linguagens de Programação</h3>
+        <h3 class="tool-category linguagens">Ling. Programação</h3>
         <div class="tool-option" onclick="redirectToTool('JavaScript')">
             <span>JavaScript</span>
         </div>

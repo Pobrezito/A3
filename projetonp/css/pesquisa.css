@@ -51,6 +51,7 @@ h1 {
     padding: 10px;
     z-index: 9999;
     border-radius: 5%;
+    align-items: center;
 }
 
 .tool-category {
@@ -122,10 +123,20 @@ h1 {
     padding: 0px 0px; /* Espaçamento interno do botão */
     color: #ffffff; /* Cor do texto */
     cursor: pointer; /* Cursor de apontar */
+    margin-right: 50px;
     transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
 }
 
-.navbar-button:not(:last-child) {
+.navbar-button1 {
+    font-size: 20px; /*Tamanho dos botões*/
+    padding: 0px 0px; /* Espaçamento interno do botão */
+    color: #ffffff; /* Cor do texto */
+    cursor: pointer; /* Cursor de apontar */
+    margin-right: 50px;
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.navbar-button1:not(:last-child) {
     margin-right: 50px; /* Margem à direita para separar os botões */
 }
 
