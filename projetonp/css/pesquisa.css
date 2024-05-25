@@ -13,6 +13,8 @@ body {
     background-attachment: fixed; /* Fixa a imagem de fundo */
     color: #ffffff; /* Cor do texto */
     font-family: Arial, sans-serif; /* Fonte do texto */
+    height: 100vh;
+    width: 100vw;
 }
 
 /* Estilos para o cabeçalho da página */
@@ -236,3 +238,4 @@ h1 {
 .language-link:hover {
     color: #793694;
 }
+
