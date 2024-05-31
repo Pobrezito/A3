@@ -1,0 +1,18 @@
+
+
+.navbar {
+    position: fixed;
+    bottom: 0; /* Posiciona a navbar no final da página */
+    left: 0%; /* Define a margem esquerda para 20% da largura da tela */
+    right: 0%; /* Define a margem direita para 20% da largura da tela */
+    width: 100%;
+    margin: auto;
+    padding: 0.9rem 1.5rem;
+    background: #c9c7b9;
+    /*border-radius: 1rem;*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Isso garante que a navbar sempre apareça em cima dos outros elementos */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
