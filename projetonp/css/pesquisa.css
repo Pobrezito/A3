@@ -142,19 +142,6 @@ a {
     border-radius: 0.5rem;
 }
 
-.drop-down li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem 1rem;
-}
-
-.drop-down li a:hover {
-    background: black;
-    color: #fff;
-    border-radius: 0.5rem;
-}
-
 #languageDetails {
     margin-top: 150px;
     padding: 20px;

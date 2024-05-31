@@ -1,49 +1,3 @@
-// Função para fazer a barra de pesquisa e a lupa explodirem
-function explodeSearchElements() {
-    var searchTxt = document.querySelector(".search-txt");
-    var searchIcon = document.querySelector(".search-icon");
-
-    searchTxt.classList.add("explode"); // Adiciona a classe "explode" à barra de pesquisa
-    searchIcon.classList.add("explode"); // Adiciona a classe "explode" à lupa
-
-    setTimeout(function() {
-        searchTxt.classList.remove("explode"); // Remove a classe "explode" da barra de pesquisa após 300ms (0.3s)
-        searchIcon.classList.remove("explode"); // Remove a classe "explode" da lupa após 300ms (0.3s)
-    }, 300);
-}
-
-// Função para fazer o botão de pesquisa explodir
-function explodeSearchButton() {
-    var searchBtn = document.querySelector(".search-btn");
-
-    searchBtn.classList.add("explode"); // Adiciona a classe "explode" ao botão de pesquisa
-
-    setTimeout(function() {
-        searchBtn.classList.remove("explode"); // Remove a classe "explode" do botão de pesquisa após 300ms (0.3s)
-    }, 300);
-}
-
-// Adiciona eventos para chamar as funções de explosão quando o usuário realizar a pesquisa
-document.addEventListener("DOMContentLoaded", function() {
-    // Captura o evento de pressionar a tecla Enter no campo de pesquisa
-    document.getElementById("searchInput").addEventListener("keydown", function(event) {
-        if (event.key === "Enter") {
-            searchLanguage(); // Chama a função de pesquisa quando a tecla Enter for pressionada
-            explodeSearchElements(); // Chama a função para fazer a barra de pesquisa e a lupa explodirem
-            explodeSearchButton(); // Chama a função para fazer o botão de pesquisa explodir
-        }
-    });
-
-    // Captura o evento de clicar no botão de pesquisa
-    document.getElementById("searchBtn").addEventListener("click", function() {
-        searchLanguage(); // Chama a função de pesquisa quando o botão de pesquisa for clicado
-        explodeSearchElements(); // Chama a função para fazer a barra de pesquisa e a lupa explodirem
-        explodeSearchButton(); // Chama a função para fazer o botão de pesquisa explodir
-    });
-});
-
-
-// Função de pesquisa
 function searchLanguage() {
     var input = document.getElementById("searchInput").value.toLowerCase();
     var languageDetails = document.getElementById("languageDetails");
@@ -99,65 +53,63 @@ function searchLanguage() {
                 <h2>Java</h2>
                 <div class="language-details">
                     <img src="../fotos/javalogo.png" alt="Java Logo" class="language-symbol">
-                    <p class="description">Java é uma linguagem de programação orientada a objetos e que foi projetada
-                    ... a...
+                    <p class="description">Java é uma linguagem de programação orientada a objetos e que foi projetada para ter poucas dependências de implementação.</p>
                     <div class="categories">
-                            <h3>Ferramentas populares:</h3>
-                            <ul>
-                                <li><a href="https://spring.io/">Spring</a>: Framework de aplicação Java.</li>
-                                <li><a href="https://hibernate.org/">Hibernate</a>: Framework de mapeamento objeto-relacional para Java.</li>
-                                <li><a href="https://commons.apache.org/">Apache Commons</a>: Conjunto de bibliotecas para Java.</li>
-                                <li><a href="https://sites.google.com/gson/">Gson</a>: Biblioteca Java para serialização e desserialização de objetos Java para JSON.</li>
-                                <li><a href="https://www.eclipse.org/">Eclipse</a>: IDE Java gratuita e de código aberto.</li>
-                                <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>: IDE Java poderosa para desenvolvedores profissionais.</li>
-                            </ul>
-                        </div>
+                        <h3>Ferramentas populares:</h3>
+                        <ul>
+                            <li><a href="https://spring.io/">Spring</a>: Framework de aplicação Java.</li>
+                            <li><a href="https://hibernate.org/">Hibernate</a>: Framework de mapeamento objeto-relacional para Java.</li>
+                            <li><a href="https://commons.apache.org/">Apache Commons</a>: Conjunto de bibliotecas para Java.</li>
+                            <li><a href="https://sites.google.com/gson/">Gson</a>: Biblioteca Java para serialização e desserialização de objetos Java para JSON.</li>
+                            <li><a href="https://www.eclipse.org/">Eclipse</a>: IDE Java gratuita e de código aberto.</li>
+                            <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>: IDE Java poderosa para desenvolvedores profissionais.</li>
+                        </ul>
                     </div>
-                `;
-                break;
-    
-            case "c#":
-                languageDetails.innerHTML += `
-                    <h2>C#</h2>
-                    <div class="language-details">
-                        <img src="../fotos/csharplogo.png" alt="Csharp Logo" class="language-symbol">
-                        <p class="description">C# é uma linguagem de programação moderna, orientada a objetos, e desenvolvida pela Microsoft como parte da plataforma .NET.</p>
-                        <div class="categories">
-                            <h3>Ferramentas populares:</h3>
-                            <ul>
-                                <li><a href="https://dotnet.microsoft.com/">.NET</a>: Plataforma de desenvolvimento de software da Microsoft.</li>
-                                <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a>: IDE da Microsoft para desenvolvimento em C# e outras linguagens.</li>
-                                <li><a href="https://github.com/dotnet/aspnetcore">ASP.NET Core</a>: Framework de desenvolvimento web para C#.</li>
-                                <li><a href="https://www.jetbrains.com/rider/">Rider</a>: IDE multiplataforma da JetBrains para desenvolvimento em .NET.</li>
-                                <li><a href="https://www.nuget.org/">NuGet</a>: Gerenciador de pacotes para a plataforma .NET.</li>
-                                <li><a href="https://www.mono-project.com/">Mono</a>: Implementação de código aberto da plataforma .NET.</
-                                </ul>
-                                </div>
-                            </div>
-                        `;
-                        break;
-                         
-                    case "ruby":
-                        languageDetails.innerHTML += `
-                            <h2>Ruby</h2>
-                            <div class="language-details">
-                                <img src="../fotos/rubylogo.png" alt="Ruby Logo" class="language-symbol">
-                                <p class="description">Ruby é uma linguagem de programação interpretada de alto nível, puramente orientada a objetos e de fácil leitura e escrita.</p>
-                                <div class="categories">
-                                    <h3>Ferramentas populares:</h3>
-                                    <ul>
-                                        <li><a href="https://rubyonrails.org/">Ruby on Rails</a>: Framework web de código aberto escrito em Ruby.</li>
-                                        <li><a href="https://rspec.info/">RSpec</a>: Estrutura de teste para Ruby.</li>
-                                        <li><a href="https://bundler.io/">Bundler</a>: Gerenciador de dependências para Ruby.</li>
-                                        <li><a href="https://www.jetbrains.com/ruby/">RubyMine</a>: IDE Ruby e Rails para desenvolvimento profissional.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        `;
-                        break;
-            
-                    default:
-                        languageDetails.innerHTML += "<p>Linguagem não encontrada.</p>";
-                }
-            }
-            
+                </div>
+            `;
+            break;
+
+        case "c#":
+            languageDetails.innerHTML += `
+                <h2>C#</h2>
+                <div class="language-details">
+                    <img src="../fotos/csharplogo.png" alt="Csharp Logo" class="language-symbol">
+                    <p class="description">C# é uma linguagem de programação moderna, orientada a objetos, e desenvolvida pela Microsoft como parte da plataforma .NET.</p>
+                    <div class="categories">
+                        <h3>Ferramentas populares:</h3>
+                        <ul>
+                            <li><a href="https://dotnet.microsoft.com/">.NET</a>: Plataforma de desenvolvimento de software da Microsoft.</li>
+                            <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a>: IDE da Microsoft para desenvolvimento em C# e outras linguagens.</li>
+                            <li><a href="https://github.com/dotnet/aspnetcore">ASP.NET Core</a>: Framework de desenvolvimento web para C#.</li>
+                            <li><a href="https://www.jetbrains.com/rider/">Rider</a>: IDE multiplataforma da JetBrains para desenvolvimento em .NET.</li>
+                            <li><a href="https://www.nuget.org/">NuGet</a>: Gerenciador de pacotes para a plataforma .NET.</li>
+                            <li><a href="https://www.mono-project.com/">Mono</a>: Implementação de código aberto da plataforma .NET.</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+            break;
+         
+        case "ruby":
+            languageDetails.innerHTML += `
+                <h2>Ruby</h2>
+                <div class="language-details">
+                    <img src="../fotos/rubylogo.png" alt="Ruby Logo" class="language-symbol">
+                    <p class="description">Ruby é uma linguagem de programação interpretada de alto nível, puramente orientada a objetos e de fácil leitura e escrita.</p>
+                    <div class="categories">
+                        <h3>Ferramentas populares:</h3>
+                        <ul>
+                            <li><a href="https://rubyonrails.org/">Ruby on Rails</a>: Framework web de código aberto escrito em Ruby.</li>
+                            <li><a href="https://rspec.info/">RSpec</a>: Estrutura de teste para Ruby.</li>
+                            <li><a href="https://bundler.io/">Bundler</a>: Gerenciador de dependências para Ruby.</li>
+                            <li><a href="https://www.jetbrains.com/ruby/">RubyMine</a>: IDE Ruby e Rails para desenvolvimento profissional.</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+            break;
+
+        default:
+            languageDetails.innerHTML += "<p>Linguagem não encontrada.</p>";
+    }
+}
