@@ -1,3 +1,4 @@
+/* Título */
 h1 {
     position: absolute;
     top: 0;
@@ -9,18 +10,21 @@ h1 {
     font-size: 40px;
 }
 
+/* Estilos do corpo */
 body {
     margin: 0;
     height: 100vh;
     width: 100vw;
     background: #02030f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Caixa de pesquisa */
 .search-box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 110px;
     background: #FFFFFF;
     height: 40px;
     padding: 10px;
@@ -28,8 +32,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: width 0.5s;
+    width: 40px; /* Largura inicial */
 }
 
+/* Texto da pesquisa */
 .search-txt {
     border: none;
     background: none;
@@ -42,6 +50,7 @@ body {
     transition: .5s;
 }
 
+/* Botão de pesquisa */
 .search-btn {
     width: 40px;
     height: 40px;
@@ -52,17 +61,26 @@ body {
     align-items: center;
 }
 
-.search-box:hover > .search-txt {
+/* Expandir search-box ao hover */
+.search-box:hover {
     width: 240px;
+}
+
+/* Expandir texto da pesquisa ao hover */
+.search-box:hover > .search-txt {
+    width: calc(240px - 40px); /* Ajuste para acomodar o botão de pesquisa */
     padding: 0 6px;
 }
 
+
+/* Estilos globais */
 * {
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -79,11 +97,13 @@ body {
     align-items: center;
 }
 
+/* Links da navbar */
 .nav-links {
     display: flex;
     gap: 2rem;
 }
 
+/* Estilos dos links da navbar */
 .nav-link, .drop-down li {
     list-style: none;
     height: 100%;
@@ -92,11 +112,13 @@ body {
     cursor: pointer;
 }
 
+/* Links */
 a {
     text-decoration: none;
     color: currentColor;
 }
 
+/* Drop-down */
 .drop-down {
     position: absolute;
     padding: 0.5rem 0;
@@ -109,21 +131,25 @@ a {
     display: none;
 }
 
+/* Hover nos links da navbar */
 .nav-link:hover {
     background-color: black;
     color: #fff;
     border-radius: 0.5rem;
 }
 
+/* Mostrar drop-down no hover */
 .services:hover .drop-down {
     display: block;
 }
 
+/* Estilos dos serviços */
 .services a {
     display: flex;
     align-items: center;
 }
 
+/* Ícone do dropdown */
 .services .dropdown-icon {
     font-size: 18px;
     position: relative;
@@ -132,10 +158,12 @@ a {
     transition: 0.3s ease-in-out all;
 }
 
+/* Rotação do ícone do dropdown no hover */
 .services:hover .dropdown-icon {
     transform: rotate(180deg);
 }
 
+/* Hover nos itens do drop-down */
 .drop-down li:hover {
     background: black;
     color: #fff;
@@ -143,9 +171,73 @@ a {
 }
 
 #languageDetails {
-    margin-top: 150px;
+    display: none; /* Inicialmente oculto */
+    /* Outros estilos... */
+}
+
+#languageDetails.show {
+    display: flex; /* Mostra quando a classe 'show' é aplicada */
+    /* Outros estilos... */
+}
+
+
+/* Detalhes da linguagem */
+#languageDetails {
+    margin-top: 200px;
     padding: 20px;
-    background: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+    background: #000000;
+    border-radius: 40px;
+    box-shadow: 0 0px 8px rgba(255, 255, 255, 0.1);
+    max-width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.language-details {
+    text-align: left;
+    max-width: fit-content;
+}
+
+.language-details h2 {
+    margin-bottom: 20px;
+    color: white
+}
+
+.language-details p {
+    margin-bottom: 20px;
+}
+
+.language-symbol {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Categorias de ferramentas */
+.categories {
+    margin-top: 20px;
+}
+
+.categories h3 {
+    margin-bottom: 10px;
+    color: white
+}
+
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos de hover para os links das ferramentas */
+.categories ul li a:hover {
+    font-weight: bold;
+    color: #15ff00; /* Altere para a cor desejada */
+    box-shadow: 0 24px 40px rgba(0, 255, 42, 0.1);
 }
