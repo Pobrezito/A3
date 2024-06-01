@@ -1,241 +1,151 @@
-/* Estilos para o corpo da página */
-* {
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
+h1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5rem;
+    margin-right: 2rem;
+    z-index: 1001;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 40px;
+}
+
 body {
-    /* Define uma imagem de fundo para o corpo */
-    background-color: #000008;
-    background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
-    background-position: center; /* Centraliza a imagem no corpo */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    background-attachment: fixed; /* Fixa a imagem de fundo */
-    color: #ffffff; /* Cor do texto */
-    font-family: Arial, sans-serif; /* Fonte do texto */
+    margin: 0;
     height: 100vh;
     width: 100vw;
+    background: #02030f;
 }
 
-/* Estilos para o cabeçalho da página */
-header {
-    text-align: center; /* Centraliza o conteúdo do cabeçalho */
-    position: relative; /* Define a posição relativa para posicionamento absoluto dos elementos filhos */
-    margin-top: 0%; /* Margem superior */
-
-}
-
-/* Estilos para o título principal */
-h1 {
-    font-size: 36px; /* Tamanho da fonte */
-    font-family: "Roboto", sans-serif; /* Fonte */
-    font-weight: bold; /* Negrito */
-}
-
-/* Estilos para a barra de navegação */
-.navbar {
-    background: linear-gradient(68.15deg, #5b6166 16.62%, #1b213c 85.61%);
-    padding: 0px 10px; /* Espaçamento interno */
-    display: flex; /* Layout flexível para alinhar os itens */
-    justify-content: space-between; /* Alinha os itens ao longo do eixo principal */
-    align-items: center; /* Alinha os itens verticalmente */
-    margin-left: -1%;
-    width: 100vw; /* Largura da área transparente */
-    height: 100px; /* Altura da área transparente */
-    margin-top: -1%;
-    margin-left: 0%;   
-}
-
-.tooltip {
+.search-box {
     position: absolute;
-    background-color: rgb(0, 0, 0);
-    border: 1px solid rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    height: 40px;
     padding: 10px;
-    z-index: 9999;
-    border-radius: 5%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.tool-category {
-    margin-bottom: 10px;
-}
-
-.linguagens-programa {
-    text-align: center;
-    color:#6d6eb8
-}
-
-.monitoracao {
-    text-align: center;
-    color:#6d6eb8
-}
-
-.desenvolvimento-agil {
-    text-align: center;
-    color: #6d6eb8
-}
-
-.tool-option {
-    cursor: pointer;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-}
-
-.tool-option:hover {
-    background-color: #101010;
-}
-
-.tool-option span {
-    cursor: pointer;
-}
-
-/* Estilo para a logo e o texto "Coding Planet" */
-.navbar-brand {
-    display: flex; /* Layout flexível para alinhar os itens */
-    align-items: center; /* Alinha os itens verticalmente */
-}
-
-.navbar-brand h1 {
-    margin: 1;
-    padding: 5px 10px; /* Adiciona preenchimento ao redor do texto */
-     color: #fff;    
-    background-size: cover; /* Ajusta o tamanho do plano de fundo para cobrir todo o elemento */
-    -webkit-background-clip: text; /* Faz com que o plano de fundo seja cortado apenas pelo texto */
-    background-clip: text; /* Faz com que o plano de fundo seja cortado apenas pelo texto */
-}
-
-
-/* Estilo para a barra de pesquisa na barra de navegação */
-.navbar-search input[type="text"] {
-    width: 500px; /* Largura da barra de pesquisa */
-    padding: 8px; /* Espaçamento interno */
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    margin-right: 5px;
-    text-shadow: 5 5 5px #6d6eb8;
-    box-shadow: #6d6eb8;
-}
-
-
-
-
-/* Estilo para os botões */
-.navbar-buttons {
-    display: flex; /* Layout flexível para alinhar os botões horizontalmente */
-    align-items: center; /* Alinha os itens verticalmente */
-}
-
-.navbar-button {
-    font-size: 20px; /*Tamanho dos botões*/
-    padding: 0px 0px; /* Espaçamento interno do botão */
-    color: #ffffff; /* Cor do texto */
-    cursor: pointer; /* Cursor de apontar */
-    margin-right: 50px;
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
-}
-
-.navbar-button1 {
-    font-size: 20px; /*Tamanho dos botões*/
-    padding: 0px 0px; /* Espaçamento interno do botão */
-    color: #ffffff; /* Cor do texto */
-    cursor: pointer; /* Cursor de apontar */
-    margin-right: 50px;
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
-}
-
-.navbar-button1:not(:last-child) {
-    margin-right: 50px; /* Margem à direita para separar os botões */
-}
-
-.alinhamento {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar-search {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px; /* Ajuste conforme necessário */
-}
-
-.navbar-search input {
-    width: 70%;
-    padding: 10px;
+.search-txt {
     border: none;
-    border-radius: 5px;
-}
-
-.navbar-search button {
-    padding: 10px 20px;
-    background-color:#6d6eb8;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.navbar-search button:hover {
-    background-color: #6d6eb8
-} 
-
-.language-details {
-    margin: 0 auto;
-    width: 80%;
-    max-width: 600px;
-}
-
-.language-details h2 {
-    font-size: 84px;
-}
-
-.language-details .language-symbol {
-    float: right;
-    margin-left: 20px;
-    max-width: 150px; /* Define o tamanho máximo da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.language-details .description {
-    margin-bottom: 20px;
-}
-
-.language-details .tools {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.language-details .tools h3 {
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-.language-details .topics {
-    display: flex;
-    flex-direction: column;
-}
-
-.language-details .topics h4 {
-    font-size: 18px;
-}
-
-.language-details .topics ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.language-details .topics ul li {
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #000000;
     font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
 }
 
-/* Estilo do link para o nome Django */
-.language-link {
-    color: rgb(114, 45, 146);
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    padding: 0.9rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link, .drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a {
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: currentColor;
 }
 
-.language-link:hover {
-    color: #793694;
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background: antiquewhite;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
 }
 
+.nav-link:hover {
+    background-color: black;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.services:hover .drop-down {
+    display: block;
+}
+
+.services a {
+    display: flex;
+    align-items: center;
+}
+
+.services .dropdown-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.services:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+    background: black;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+#languageDetails {
+    margin-top: 150px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

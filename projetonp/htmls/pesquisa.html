@@ -1,46 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <!-- Configurações básicas do documento -->
+    <link rel="stylesheet" href="../css/pesquisa.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Planet</title>
-    <!-- Importa o arquivo CSS para estilizar a página -->
-    <link rel="stylesheet" href="../css/pesquisa.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabeçalho da página -->
-    <header>
-        <!-- Barra de navegação -->
-        <nav class="navbar">
-            <!-- Marca e logo do site -->
-            <div class="navbar-brand">
-                <h1>Coding Planet</h1>
-            </div>
-            <!-- Botões da barra de navegação -->
-            <div class="navbar-buttons">
-                <!-- Botão "Engenharia de Software" e separador -->
-                <div class="navbar-button" id="tools">Engenharia de Software</div>
-                <div class="navbar-button1" id="tools1">Linguagens de Programação</div>
-            </div>
-        </nav>
-    </header>
-    <!-- Área principal do conteúdo -->
+    <h1>coding planet</h1>
     <main>
-        <div class="navbar-search">
-            <input type="text" id="searchInput" placeholder="Pesquisar linguagem...">
-            <button onclick="searchLanguage()">Pesquisar</button>
+        <div class="search-box">
+            <input type="text" class="search-txt" id="searchInput" placeholder="Pesquisar">
             <a href="#" class="search-btn">
-                <img src="loupe.svg" alt="Lupa" height="20px" width="20px">
+                <img src="../fotos/loupe.svg" alt="Lupa" height="20" width="20">
             </a>
         </div>
-        <div class="language-details" id="languageDetails">
-            <!-- Os detalhes da linguagem serão inseridos dinamicamente aqui -->
+
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <!--<li class="nav-link">
+                        <a href="#">Home</a>
+                    </li>-->
+                    <li class="nav-link services" id="tools">
+                        <a href="#">Engenharia de Software
+                            <span class="material-icons dropdown-icon"></span>
+                        </a>
+                        <ul class="drop-down">
+                            <li>Trello</li>
+                            <li>Jira</li>
+                            <li>Scrum</li>
+                            <li>Kanban</li>
+                            <li>Lean</li>
+                            <li>Dynamic System Development Method</li>
+                            <li>Extreme Programing</li>
+                            <li>Feature Driven Development</li>   
+                        </ul>
+                    </li>
+                    <li class="nav-link services" id="tools1">
+                        <a href="#">Linguagens de Programação
+                            <span class="material-icons dropdown-icon"></span>
+                        </a>
+                        <ul class="drop-down">
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </li>
+                    <!--<li class="nav-link">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Contact</a>
+                    </li>-->
+                </ul>
+            </nav>
         </div>
+        <div id="languageDetails"></div>
     </main>
-    <!-- Importa os scripts JavaScript -->
-    <script src="../jss/pesquisa.js"></script>
-    <script src="../jss/tooltip.js"></script> <!-- Adicionando o script para o tooltip Engenharia de Software -->
-    <script src="../jss/tooltip1.js"></script> <!-- Adicionando o script para o tooltip Linguagens -->
+    <script src="pesquisa.js"></script>
+    <script src="tooltip.js"></script>
+    <script src="tooltip.js"></script>
 </body>
 </html>
