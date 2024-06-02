@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,26 +37,22 @@
                 Olá!<br>
                 Seja bem vindo de volta.
             </h1>
-            <form action="https://api.sheetmonkey.io/form/rGSJewimsb9mG55pvBfhKp" method="post">
             <div class="box">
                 <h2>faça o seu login agora</h2>
                 <input type="text" name="username" id="username" placeholder="username">
                 <input type="password" name="password" id="password" placeholder="password">
-            </form>
-
-                
+            
                 <a href="password.html">
                     <p>Esqueceu a sua senha?</p>
                 </a>
 
-                <button>Login</button>
+                <button id="loginButton">Login</button>
                 
                 <a href="account.html">
                     <p>Criar uma conta</p>
                 </a>
 
                 <div class="social">
-                  
                     <a href="https://coding-planet.in/" target="_blank">
                         <img src="../fotos/google.png" alt="Google">
                     </a>
@@ -67,9 +63,13 @@
                         <img src="../fotos/github.png" alt="GitHub">
                     </a>
                 </div>
-                
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            window.location.href = 'pesquisa.html';
+        });
+    </script>
 </body>
 </html>
