@@ -1,5 +1,7 @@
 let suggestions = [
     "Channel",
+    "CodingLab",
+    "CodingNepal",
     "YouTube",
     "YouTuber",
     "YouTube Channel",

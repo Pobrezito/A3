@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 /* Título */
 h1 {
     position: absolute;
@@ -10,7 +12,7 @@ h1 {
     font-size: 40px;
 }
 
-/* Estilos do corpo */
+/* Estilos do corpo 
 body {
     margin: 0;
     height: 100vh;
@@ -19,65 +21,95 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Caixa de pesquisa */
-.search-box {
-    position: absolute;
-    top: 110px;
-    background: #FFFFFF;
-    height: 40px;
-    padding: 10px;
-    border-radius: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: width 0.5s;
-    width: 40px; /* Largura inicial */
+body{
+  background: #000000;
+  padding: 0 20px;
 }
 
-/* Texto da pesquisa */
-.search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    padding: 0;
-    color: #000000;
-    font-size: 16px;
-    line-height: 40px;
-    width: 0;
-    transition: .5s;
+::selection{
+  color: #fff;
+  background: #664AFF;
 }
 
-/* Botão de pesquisa */
-.search-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
 }
 
-/* Expandir search-box ao hover */
-.search-box:hover {
-    width: 240px;
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
 }
 
-/* Expandir texto da pesquisa ao hover */
-.search-box:hover > .search-txt {
-    width: calc(240px - 40px); /* Ajuste para acomodar o botão de pesquisa */
-    padding: 0 6px;
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 }
 
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
 
-/* Estilos globais */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
 }
 
 /* Navbar */
@@ -170,74 +202,4 @@ a {
     border-radius: 0.5rem;
 }
 
-#languageDetails {
-    display: none; /* Inicialmente oculto */
-    /* Outros estilos... */
-}
 
-#languageDetails.show {
-    display: flex; /* Mostra quando a classe 'show' é aplicada */
-    /* Outros estilos... */
-}
-
-
-/* Detalhes da linguagem */
-#languageDetails {
-    margin-top: 200px;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    background: #000000;
-    border-radius: 40px;
-    box-shadow: 0 0px 8px rgba(255, 255, 255, 0.1);
-    max-width: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.language-details {
-    text-align: left;
-    max-width: fit-content;
-}
-
-.language-details h2 {
-    margin-bottom: 20px;
-    color: white
-}
-
-.language-details p {
-    margin-bottom: 20px;
-}
-
-.language-symbol {
-    max-width: 150px;
-    max-height: 150px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Categorias de ferramentas */
-.categories {
-    margin-top: 20px;
-}
-
-.categories h3 {
-    margin-bottom: 10px;
-    color: white
-}
-
-.categories ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.categories ul li {
-    margin-bottom: 10px;
-}
-
-/* Estilos de hover para os links das ferramentas */
-.categories ul li a:hover {
-    font-weight: bold;
-    color: #15ff00; /* Altere para a cor desejada */
-    box-shadow: 0 24px 40px rgba(0, 255, 42, 0.1);
-}

@@ -9,16 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
-</head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <body>
     <h1>coding planet</h1>
     <main>
-        <div class="search-box">
-            <input type="text" class="search-txt" id="searchInput" placeholder="Pesquisar">
-            <a href="#" class="search-btn" onclick="searchLanguage()">
-                <img src="../fotos/loupe.svg" alt="Lupa" height="20" width="20">
-            </a>
-        </div>
+        <div class="wrapper">
+            <div class="search-input">
+              <a href="" target="_blank" hidden></a>
+              <input type="text" placeholder="Pesquisar...">
+              <div class="autocom-box">
+                <!-- here list are inserted from javascript -->
+              </div>
+              <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+          </div>
 
         <div class="container">
             <nav class="navbar">
@@ -62,8 +67,8 @@
                 </ul>
             </nav>
         </div>
-        <div id="languageDetails"></div>
     </main>
-    <script src="../jss/pesquisa.js"></script>
+    <script src="./projetonp/suggestions.js"></script> 
+     <script src="./projetonp/script.js"></script> 
 </body>
 </html>
