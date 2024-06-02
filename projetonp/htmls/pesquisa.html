@@ -9,19 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
 <body>
     <h1>coding planet</h1>
     <main>
         <div class="wrapper">
             <div class="search-input">
               <a href="" target="_blank" hidden></a>
-              <input type="text" placeholder="Pesquisar...">
+              <input type="text" id="searchInput" placeholder="Pesquisar...">
               <div class="autocom-box">
-                <!-- here list are inserted from javascript -->
+                <!-- aqui as sugestões são inseridas pelo javascript -->
               </div>
-              <div class="icon"><i class="fas fa-search"></i></div>
+              <div class="icon" onclick="searchLanguage()"><i class="fas fa-search"></i></div>
             </div>
           </div>
 
@@ -67,8 +67,9 @@
                 </ul>
             </nav>
         </div>
+        <div id="languageDetails"></div>
     </main>
     <script src="./projetonp/suggestions.js"></script> 
-     <script src="./projetonp/script.js"></script> 
+    <script src="/projetonp/jss/script.js"></script> 
 </body>
 </html>
