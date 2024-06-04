@@ -3,113 +3,120 @@
 /* Título */
 h1 {
     position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0.5rem;
-    margin-right: 2rem;
-    z-index: 1001;
+    top: 20px;
+    right: 20px;
+    margin: 0;
     font-family: "Pixelify Sans", sans-serif;
     font-size: 40px;
+    color: #fff;
+    z-index: 1001;
 }
 
-/* Estilos do corpo 
-body {
+/* Estilos Globais */
+* {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
     background: #02030f;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-}*/
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    padding: 0 20px;
 }
 
-body{
-  background: #000000;
-  padding: 0 20px;
+::selection {
+    color: #fff;
+    background: #664AFF;
 }
 
-::selection{
-  color: #fff;
-  background: #664AFF;
+/* Container Principal */
+.wrapper {
+    max-width: 450px;
+    margin: 150px auto;
+    width: 100%;
 }
 
-.wrapper{
-  max-width: 450px;
-  margin: 150px auto;
+.wrapper .search-input {
+    background: #1c1c1e;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-.wrapper .search-input{
-  background: #fff;
-  width: 100%;
-  border-radius: 5px;
-  position: relative;
-  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+.search-input input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    color: #fff;
+    background: #1c1c1e;
+    transition: all 0.3s ease;
 }
 
-.search-input input{
-  height: 55px;
-  width: 100%;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  padding: 0 60px 0 20px;
-  font-size: 18px;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+.search-input.active input {
+    border-radius: 10px 10px 0 0;
 }
 
-.search-input.active input{
-  border-radius: 5px 5px 0 0;
+.search-input .autocom-box {
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
 }
 
-.search-input .autocom-box{
-  padding: 0;
-  opacity: 0;
-  pointer-events: none;
-  max-height: 280px;
-  overflow-y: auto;
+.search-input.active .autocom-box {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
-.search-input.active .autocom-box{
-  padding: 10px 8px;
-  opacity: 1;
-  pointer-events: auto;
+.autocom-box li {
+    list-style: none;
+    padding: 10px 15px;
+    display: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #2c2c2e;
+    color: #fff;
+    transition: background 0.3s;
 }
 
-.autocom-box li{
-  list-style: none;
-  padding: 8px 12px;
-  display: none;
-  width: 100%;
-  cursor: default;
-  border-radius: 3px;
+.search-input.active .autocom-box li {
+    display: block;
 }
 
-.search-input.active .autocom-box li{
-  display: block;
+.autocom-box li:hover {
+    background: #444;
 }
 
-.autocom-box li:hover{
-  background: #efefef;
+.search-input .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #664AFF;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.search-input .icon{
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 55px;
-  width: 55px;
-  text-align: center;
-  line-height: 55px;
-  font-size: 20px;
-  color: #644bff;
-  cursor: pointer;
+.search-input .icon:hover {
+    color: #8566ff;
 }
 
 /* Navbar */
@@ -121,7 +128,7 @@ body{
     width: 100%;
     margin: auto;
     padding: 0.9rem 1.5rem;
-    background: #fff;
+    background: #1c1c1e;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
@@ -129,77 +136,107 @@ body{
     align-items: center;
 }
 
-/* Links da navbar */
+/* Links da Navbar */
 .nav-links {
     display: flex;
     gap: 2rem;
 }
 
-/* Estilos dos links da navbar */
 .nav-link, .drop-down li {
     list-style: none;
     height: 100%;
     padding: 0.5rem 1rem;
     font-weight: 600;
     cursor: pointer;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* Links */
 a {
     text-decoration: none;
-    color: currentColor;
+    color: #fff;
 }
 
-/* Drop-down */
 .drop-down {
     position: absolute;
     padding: 0.5rem 0;
     margin: 0.5rem -0.5rem;
-    background: antiquewhite;
-    color: black;
+    background: #2c2c2e;
+    color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-    font-size: 12px;
+    font-size: 14px;
     display: none;
 }
 
-/* Hover nos links da navbar */
-.nav-link:hover {
-    background-color: black;
+.nav-link:hover, .drop-down li:hover {
+    background: #444;
     color: #fff;
     border-radius: 0.5rem;
 }
 
-/* Mostrar drop-down no hover */
 .services:hover .drop-down {
     display: block;
 }
 
-/* Estilos dos serviços */
 .services a {
     display: flex;
     align-items: center;
 }
 
-/* Ícone do dropdown */
 .services .dropdown-icon {
     font-size: 18px;
     position: relative;
     right: -5px;
     transform: rotate(0deg);
-    transition: 0.3s ease-in-out all;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Rotação do ícone do dropdown no hover */
 .services:hover .dropdown-icon {
     transform: rotate(180deg);
 }
 
-/* Hover nos itens do drop-down */
-.drop-down li:hover {
-    background: black;
-    color: #fff;
-    border-radius: 0.5rem;
+/* Detalhes das linguagens de programação */
+.language-details {
+    margin: 20px 0;
 }
 
+.language-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
+.language-details .description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.language-details .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.language-details .categories div {
+    flex: 1;
+    min-width: 150px;
+}
+
+.language-details .categories h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.language-details .categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.language-details .categories ul li {
+    margin-bottom: 5px;
+}
+
+.language-symbol {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-top: 20px;
+}
