@@ -2,14 +2,14 @@
 
 /* Título */
 h1 {
-    position: fixed;
+    position: fixed; /* Fixa a posição do título */
     top: 20px;
     right: 20px;
     margin: 0;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Pixelify Sans", sans-serif; /* Define a fonte do título */
     font-size: 40px;
-    color: #fff;
-    z-index: 1001;
+    color: #fff; /* Cor branca para o texto */
+    z-index: 1001; /* Mantém o título sobre outros elementos */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -19,37 +19,38 @@ h1 {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos nas dimensões dos elementos */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão */
 }
 
 body {
-    background: #02030f;
-    color: #fff;
+    background-image: url(../fotos/background.jpg);
+    background-size: 100%;
+    color: #fff; /* Texto branco */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 20px; /* Espaçamento lateral */
 }
 
 ::selection {
     color: #fff;
-    background: #664AFF;
+    background: #664AFF; /* Cor de destaque ao selecionar texto */
 }
 
 /* Container Principal */
 .wrapper {
     max-width: 450px;
-    margin: 150px auto;
+    margin: 150px auto; /* Centraliza horizontalmente com margem superior */
     width: 100%;
 }
 
 .wrapper .search-input {
-    background: #1c1c1e;
+    background: #1c1c1e; /* Fundo cinza escuro */
     width: 100%;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
     transition: all 0.3s ease;
 }
 
@@ -59,15 +60,15 @@ body {
     outline: none;
     border: none;
     border-radius: 10px;
-    padding: 0 60px 0 20px;
+    padding: 0 60px 0 20px; /* Espaçamento interno */
     font-size: 18px;
     color: #fff;
-    background: #1c1c1e;
+    background: #1c1c1e; /* Fundo cinza escuro */
     transition: all 0.3s ease;
 }
 
 .search-input.active input {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0; /* Borda arredondada no topo quando ativo */
 }
 
 .search-input .autocom-box {
@@ -91,7 +92,7 @@ body {
     width: 100%;
     cursor: pointer;
     border-radius: 5px;
-    background: #2c2c2e;
+    background: #2c2c2e; /* Fundo cinza mais claro */
     color: #fff;
     transition: background 0.3s;
 }
@@ -101,7 +102,7 @@ body {
 }
 
 .autocom-box li:hover {
-    background: #444;
+    background: #444; /* Fundo mais escuro ao passar o mouse */
 }
 
 .search-input .icon {
@@ -111,15 +112,15 @@ body {
     height: 55px;
     width: 55px;
     text-align: center;
-    line-height: 55px;
+    line-height: 55px; /* Centraliza o ícone verticalmente */
     font-size: 20px;
-    color: #664AFF;
+    color: #664AFF; /* Cor do ícone */
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .search-input .icon:hover {
-    color: #8566ff;
+    color: #8566ff; /* Cor do ícone ao passar o mouse */
 }
 
 /* Navbar */
@@ -130,10 +131,10 @@ body {
     right: 0;
     width: 100%;
     margin: auto;
-    padding: 0.9rem 1.5rem;
-    background: #1c1c1e;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    padding: 0.9rem 1.5rem; /* Espaçamento interno */
+    background: #1c1c1e; /* Fundo cinza escuro */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+    z-index: 1000; /* Mantém a navbar sobre outros elementos */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -142,13 +143,13 @@ body {
 /* Links da Navbar */
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 2rem; /* Espaçamento entre os links */
 }
 
 .nav-link, .drop-down li {
     list-style: none;
     height: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem; /* Espaçamento interno */
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
@@ -162,23 +163,23 @@ a {
 .drop-down {
     position: absolute;
     padding: 0.5rem 0;
-    margin: 0.5rem -0.5rem;
-    background: #2c2c2e;
+    margin: 0.5rem -0.5rem; /* Ajusta a posição do dropdown */
+    background: #2c2c2e; /* Fundo cinza mais claro */
     color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
     border-radius: 0.5rem;
     font-size: 14px;
     display: none;
 }
 
 .nav-link:hover, .drop-down li:hover {
-    background: #444;
+    background: #444; /* Fundo mais escuro ao passar o mouse */
     color: #fff;
     border-radius: 0.5rem;
 }
 
 .services:hover .drop-down {
-    display: block;
+    display: block; /* Exibe o dropdown ao passar o mouse */
 }
 
 .services a {
@@ -195,7 +196,7 @@ a {
 }
 
 .services:hover .dropdown-icon {
-    transform: rotate(180deg);
+    transform: rotate(180deg); /* Gira o ícone ao passar o mouse */
 }
 
 /* Detalhes das linguagens de programação */
@@ -239,7 +240,7 @@ a {
 }
 
 .language-symbol {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
+    width: 100px; /* Ajusta o tamanho conforme necessário */
     height: auto;
     margin-top: 20px;
 }
