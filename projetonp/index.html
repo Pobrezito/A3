@@ -48,7 +48,7 @@
       <div class="conteudo-principal-escrito">
         <h1 class="conteudo-principal-escrito-titulo">GOSTOU?</h1>
         <h2 class="conteudo-principal-escrito-subtitulo">clique aqui e saiba mais : </h2>
-        <button class="conteudo-principal-escrito-botao" onclick="irParaPagina()">SEJA CP</button>
+        <button class="conteudo-principal-escrito-botao" onclick="irParaPagina()">CODE PLANET</button>
 
         <script>
             function irParaPagina() {
@@ -69,34 +69,55 @@
             <h1 id="logo">coding planet</h1>
 
             <div id="footer_social_media">
-                <a href="#" class="footer-link" id="google">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=codingplanet01@gmail.com&su=Assunto do Email&body=Corpo do Email" class="footer-link" id="google">
                     <i class="fa-brands fa-google"></i>
                 </a>
+                
 
-                <a href="#" class="footer-link" id="discord">
+                <a href="" class="footer-link" id="discord">
                     <i class="fa-brands fa-discord"></i>
                 </a>
 
-                <a href="#" class="footer-link" id="github">
+                <a href="https://github.com/Pobrezito/A3" class="footer-link" id="github">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
         </div>
         <div id="footer_subscribe">
             <h3>Inscreva-se</h3>
-
             <p>
-              Digite seu e-mail para ser notificado sobre
-              nossas novidades e atualizações
+                Digite seu e-mail para ser notificado sobre
+                nossas novidades e atualizações
             </p>
-
             <div id="input_group">
                 <input type="email" id="email">
-                <button>
+                <button id="sendEmailBtn"> <!-- Adicionando o id "sendEmailBtn" ao botão -->
                     <i class="fa-regular fa-envelope"></i>
                 </button>
             </div>
         </div>
-    </div>
+        <script>
+            document.getElementById('sendEmailBtn').addEventListener('click', function() {
+                // Obter o valor do email
+                var email = document.getElementById('email').value;
+        
+                // Enviar o email para o banco de dados (substitua esta parte com sua lógica de envio para o banco de dados)
+                // Aqui, vou apenas imprimir o email no console para demonstração
+                alert('Email enviado para o banco de dados:');
+        
+                // Limpar o campo de entrada após enviar
+                document.getElementById('email').value = '';
+            });
+        </script>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
 </html>
