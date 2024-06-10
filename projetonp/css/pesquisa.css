@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-/* Título */
-h1 {
-    position: fixed; /* Fixa a posição do título */
-    top: 20px;
-    right: 20px;
-    margin: 0;
-    font-family: "Pixelify Sans", sans-serif; /* Define a fonte do título */
-    font-size: 40px;
-    color: #fff; /* Cor branca para o texto */
-    z-index: 1001; /* Mantém o título sobre outros elementos */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 /* Estilos Globais */
 * {
     margin: 0;
@@ -24,7 +9,7 @@ h1 {
 }
 
 body {
-    background-image: url(../fotos/background.jpg);
+    background-color: #1c1c1e;
     background-size: 100%;
     color: #fff; /* Texto branco */
     display: flex;
@@ -144,6 +129,7 @@ body {
 .nav-links {
     display: flex;
     gap: 2rem; /* Espaçamento entre os links */
+    flex-grow: 1;
 }
 
 .nav-link, .drop-down li {
@@ -243,4 +229,9 @@ a {
     width: 100px; /* Ajusta o tamanho conforme necessário */
     height: auto;
     margin-top: 20px;
+}
+
+/* Alinhar o #tools3 à direita */
+#tools3 {
+    margin-left: auto;
 }

@@ -1,84 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="../css/pesquisa.css"> <!-- Link para o arquivo CSS -->
-    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para tornar o site responsivo -->
-    <title>Document</title> <!-- Título da página -->
-
-    <!-- Pré-conexão com o Google Fonts para carregar fontes mais rápido -->
+    <link rel="stylesheet" href="../css/pesquisa.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa-Html</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Link para a fonte Pixelify Sans do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
-    <!-- Link para o Font Awesome para usar ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <h1>Code Planet</h1> <!-- Título principal da página -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-link services" id="tools">
+                    <a href="#">Engenharia de Software
+                        <span class="material-icons dropdown-icon"></span>
+                    </a>
+                    <ul class="drop-down">
+                        <li><a href="https://trello.com">Trello</a></li>
+                        <li><a href="https://www.atlassian.com/software/jira">Jira</a></li>
+                        <li><a href="https://www.scrum.org">Scrum</a></li>
+                        <li><a href="https://www.digite.com/kanban/">Kanban</a></li>
+                        <li><a href="https://www.lean.org.br/o-que-e-lean.aspx">Lean</a></li>
+                        <li><a href="https://www.linkedin.com/pulse/agile-methods-04-método-dsdm-dynamic-systems-method-rodrigo-coimbra-nzluf/">Dynamic System Development Method</a></li>
+                        <li><a href="https://www.devmedia.com.br/extreme-programming-conceitos-e-praticas/1498">Extreme Programming</a></li>
+                        <li><a href="https://www.devmedia.com.br/introducao-ao-fdd-feature-driven-development/27971">Feature Driven Development</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link services" id="tools1">
+                    <a href="#">Linguagens de Programação
+                        <span class="material-icons dropdown-icon"></span>
+                    </a>
+                    <ul class="drop-down">
+                        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a></li>
+                        <li><a href="https://www.python.org/">Python</a></li>
+                        <li><a href="https://www.java.com/">Java</a></li>
+                        <li><a href="https://learn.microsoft.com/pt-br/dotnet/csharp/">C#</a></li>
+                        <li><a href="https://www.ruby-lang.org/pt/">Ruby</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link services" id="tools3">
+                    <a href="#">CODING-PLANET
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Code Planet</h1>
+    </header>
     <main>
         <div class="wrapper">
             <div class="search-input">
-              <a href="" target="_blank" hidden></a> <!-- Link oculto -->
-              <input type="text" id="searchInput" placeholder="Pesquisar..."> <!-- Campo de entrada de texto para pesquisa -->
-              <div class="autocom-box">
-                <!-- aqui as sugestões são inseridas pelo javascript -->
-              </div>
-              <div class="icon" onclick="searchLanguage()"><i class="fas fa-search"></i></div> <!-- Ícone de busca com função de clique -->
+                <a href="" target="_blank" hidden></a>
+                <input type="text" id="searchInput" placeholder="Pesquisar...">
+                <div class="autocom-box"></div>
+                <div class="icon" onclick="searchLanguage()"><i class="fas fa-search"></i></div>
             </div>
-          </div>
-
-        <div class="container">
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <!--<li class="nav-link">
-                        <a href="#">Home</a>
-                    </li>-->
-                    <li class="nav-link services" id="tools">
-                        <a href="#">Engenharia de Software
-                            <span class="material-icons dropdown-icon"></span>
-                        </a>
-                        <ul class="drop-down">
-                            <li><a href="https://trello.com">Trello</a></li>
-                            <li><a href="https://www.atlassian.com/software/jira">Jira</a></li>
-                            <li><a href="https://www.scrum.org">Scrum</a></li>
-                            <li><a href="https://www.digite.com/kanban/">Kanban</a></li>
-                            <li><a href="https://www.lean.org.br/o-que-e-lean.aspx">Lean</a></li>
-                            <li><a href="https://www.linkedin.com/pulse/agile-methods-04-método-dsdm-dynamic-systems-method-rodrigo-coimbra-nzluf/">Dynamic System Development Method</a></li>
-                            <li><a href="https://www.devmedia.com.br/extreme-programming-conceitos-e-praticas/1498">Extreme Programming</a></li>
-                            <li><a href="https://www.devmedia.com.br/introducao-ao-fdd-feature-driven-development/27971">Feature Driven Development</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-link services" id="tools1">
-                        <a href="#">Linguagens de Programação
-                            <span class="material-icons dropdown-icon"></span>
-                        </a>
-                        <ul class="drop-down">
-                            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a></li>
-                            <li><a href="https://www.python.org/">Python</a></li>
-                            <li><a href="https://www.java.com/">Java</a></li>
-                            <li><a href="https://learn.microsoft.com/pt-br/dotnet/csharp/">C#</a></li>
-                            <li><a href="https://www.ruby-lang.org/pt/">Ruby</a></li>
-                        </ul>
-                    </li>
-                    <!--<li class="nav-link">
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Contato</a>
-                    </li>-->
-                </ul>
-            </nav>
         </div>
-        <div id="languageDetails"></div> <!-- Div onde os detalhes da linguagem serão exibidos -->
+        <div class="container">
+            <div id="languageDetails"></div>
+        </div>
     </main>
     <script>
-        // Função para buscar detalhes da linguagem
         function searchLanguage() {
-            var input = document.getElementById("searchInput").value.toLowerCase(); // Obtém o valor do campo de entrada
+            var input = document.getElementById("searchInput").value.toLowerCase();
             var languageDetails = document.getElementById("languageDetails");
 
-            languageDetails.innerHTML = ""; // Limpa os detalhes anteriores
+            languageDetails.innerHTML = "";
 
             switch(input) {
                 case "python":
@@ -110,54 +99,52 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="../fotos/pythonlogo.png" alt="Logotipo do Python" class="language-symbol"> <!-- Imagem do logotipo do Python -->
+                        <img src="../fotos/pythonlogo.png" alt="Logotipo do Python" class="language-symbol">
                     `;
                     break;
-
                 case "javascript":
                     languageDetails.innerHTML += `
                         <div class="language-details">
                             <h2>JavaScript</h2>
-                            <p class="description">JavaScript é uma linguagem de programação interpretada, estruturada e de script com tipagem dinâmica fraca e multiparadigma.</p>
+                            <p class="description">JavaScript é uma linguagem de programação interpretada, orientada a objetos, e dinâmica.</p>
                             <div class="categories">
                                 <div>
                                     <h3>Frameworks:</h3>
                                     <ul>
                                         <li><a href="https://reactjs.org/">React</a>: Biblioteca JavaScript para criar interfaces de usuário.</li>
-                                        <li><a href="https://angular.io/">Angular</a>: Framework JavaScript mantido pela Google para desenvolvimento de aplicativos web.</li>
-                                        <li><a href="https://vuejs.org/">Vue.js</a>: Framework JavaScript progressivo para construir interfaces de usuário.</li>
+                                        <li><a href="https://angular.io/">Angular</a>: Plataforma para a construção de aplicações web dinâmicas.</li>
+                                        <li><a href="https://vuejs.org/">Vue.js</a>: Framework JavaScript progressivo para a construção de interfaces de usuário.</li>
                                     </ul>
                                 </div>
                                 <div>
                                     <h3>Bibliotecas:</h3>
                                     <ul>
-                                        <li><a href="https://jquery.com/">jQuery</a>: Biblioteca JavaScript rápida, pequena e rica em recursos.</li>
-                                        <li><a href="https://lodash.com/">Lodash</a>: Utilitários JavaScript modernos e eficientes.</li>
+                                        <li><a href="https://jquery.com/">jQuery</a>: Biblioteca rápida, pequena e rica em recursos.</li>
+                                        <li><a href="https://lodash.com/">Lodash</a>: Biblioteca utilitária que oferece compatibilidade e recursos adicionais ao JavaScript.</li>
                                     </ul>
                                 </div>
                                 <div>
                                     <h3>IDE's:</h3>
                                     <ul>
-                                        <li><a href="https://code.visualstudio.com/">Visual Studio Code</a>: Editor de código-fonte desenvolvido pela Microsoft.</li>
-                                        <li><a href="https://www.jetbrains.com/webstorm/">WebStorm</a>: IDE JavaScript e TypeScript inteligente.</li>
+                                        <li><a href="https://code.visualstudio.com/">Visual Studio Code</a>: Editor de código-fonte leve, mas poderoso.</li>
+                                        <li><a href="https://www.jetbrains.com/webstorm/">WebStorm</a>: IDE JavaScript da JetBrains.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <img src="../fotos/jslogo.png" alt="Logotipo do JavaScript" class="language-symbol"> <!-- Imagem do logotipo do JavaScript -->
+                        <img src="../fotos/jslogo.png" alt="Logotipo do JavaScript" class="language-symbol">
                     `;
                     break;
-
                 case "java":
                     languageDetails.innerHTML += `
                         <div class="language-details">
                             <h2>Java</h2>
-                            <p class="description">Java é uma linguagem de programação orientada a objetos e que foi projetada para ter poucas dependências de implementação.</p>
+                            <p class="description">Java é uma linguagem de programação de propósito geral, orientada a objetos, e baseada em classes.</p>
                             <div class="categories">
                                 <div>
                                     <h3>Frameworks:</h3>
                                     <ul>
-                                        <li><a href="https://spring.io/">Spring</a>: Framework de aplicação Java.</li>
+                                        <li><a href="https://spring.io/">Spring</a>: Framework para desenvolvimento de aplicações Java.</li>
                                         <li><a href="https://hibernate.org/">Hibernate</a>: Framework de mapeamento objeto-relacional para Java.</li>
                                     </ul>
                                 </div>
@@ -177,10 +164,9 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="../fotos/javalogo.png" alt="Logotipo do Java" class="language-symbol"> <!-- Imagem do logotipo do Java -->
+                        <img src="../fotos/javalogo.png" alt="Logotipo do Java" class="language-symbol">
                     `;
                     break;
-
                 case "c#":
                     languageDetails.innerHTML += `
                         <div class="language-details">
@@ -196,58 +182,186 @@
                                 <div>
                                     <h3>Bibliotecas:</h3>
                                     <ul>
-                                        <li><a href="https://www.nuget.org/">NuGet</a>: Gerenciador de pacotes para a plataforma .NET.</li>
-                                        <li><a href="https://www.mono-project.com/">Mono</a>: Implementação de código aberto da plataforma .NET.</li>
+                                        <li><a href="https://www.newtonsoft.com/json">Newtonsoft.Json</a>: Biblioteca popular para trabalhar com JSON em C#.</li>
                                     </ul>
                                 </div>
                                 <div>
                                     <h3>IDE's:</h3>
                                     <ul>
-                                        <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a>: IDE da Microsoft para desenvolvimento em C# e outras linguagens.</li>
-                                        <li><a href="https://www.jetbrains.com/rider/">Rider</a>: IDE multiplataforma da JetBrains para desenvolvimento em .NET.</li>
+                                        <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a>: IDE poderosa da Microsoft para desenvolvimento em C#.</li>
+                                        <li><a href="https://code.visualstudio.com/">Visual Studio Code</a>: Editor de código-fonte leve, mas poderoso.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <img src="../fotos/csharplogo.png" alt="Logotipo do Csharp" class="language-symbol"> <!-- Imagem do logotipo do C# -->
+                        <img src="../fotos/csharplogo.png" alt="Logotipo do C#" class="language-symbol">
                     `;
                     break;
+                    case "ruby":
+    languageDetails.innerHTML += `
+        <div class="language-details">
+            <h2>Ruby</h2>
+            <p class="description">Ruby é uma linguagem de programação dinâmica, de código aberto, com uma sintaxe elegante e fácil de ler. Foi desenvolvida por Yukihiro "Matz" Matsumoto na década de 1990, no Japão.</p>
+            <div class="categories">
+                <div>
+                    <h3>Frameworks:</h3>
+                    <ul>
+                        <li><a href="https://rubyonrails.org/">Ruby on Rails</a>: Framework popular para desenvolvimento web em Ruby.</li>
+                        <li><a href="https://sinatrarb.com/">Sinatra</a>: Micro-framework para construir aplicações web em Ruby.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Bibliotecas:</h3>
+                    <ul>
+                        <li><a href="https://rubygems.org/gems/json">JSON</a>: Biblioteca para trabalhar com JSON em Ruby.</li>
+                        <li><a href="https://ruby-doc.org/stdlib/libdoc/net/http/rdoc/Net/HTTP.html">Net::HTTP</a>: Biblioteca para fazer requisições HTTP em Ruby.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>IDE's:</h3>
+                    <ul>
+                        <li><a href="https://www.jetbrains.com/ruby/">RubyMine</a>: IDE da JetBrains para desenvolvimento em Ruby.</li>
+                        <li><a href="https://code.visualstudio.com/">Visual Studio Code</a>: Editor de código-fonte leve, mas poderoso, com suporte para Ruby.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="../fotos/rubylogo.png" alt="Logotipo do Ruby" class="language-symbol">
+    `;
+    break;
+    case "trello":
+    languageDetails.innerHTML += `
+        <div class="language-details">
+            <h2>Trello</h2>
+            <p class="description">Trello é uma plataforma de gerenciamento de projetos baseada em quadros. Ele utiliza o conceito de quadros, listas e cartões para ajudar equipes a organizar e priorizar suas tarefas de forma colaborativa.</p>
+            <div class="categories">
+                <div>
+                    <h3>Recursos Principais:</h3>
+                    <ul>
+                        <li>Criar quadros para organizar projetos.</li>
+                        <li>Adicionar listas em quadros para representar fluxos de trabalho.</li>
+                        <li>Criar cartões para representar tarefas individuais.</li>
+                        <li>Atribuir membros a cartões para distribuir responsabilidades.</li>
+                        <li>Comentar e anexar arquivos aos cartões para fornecer mais contexto.</li>
+                        <li>Definir prazos e adicionar etiquetas para organizar e priorizar tarefas.</li>
+                        <li>Integrar com outras ferramentas e aplicativos populares.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Integrações:</h3>
+                    <ul>
+                        <li><a href="https://trello.com/platforms">Plataforma de Desenvolvimento do Trello</a>: Para criar integrações personalizadas com outras ferramentas.</li>
+                        <li><a href="https://trello.com/power-ups">Power-Ups</a>: Extensões que adicionam funcionalidades extras aos quadros do Trello.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Aplicações:</h3>
+                    <ul>
+                        <li><a href="https://trello.com/platforms">Trello Desktop</a>: Aplicativo desktop oficial do Trello para Windows e macOS.</li>
+                        <li><a href="https://trello.com/mobile">Trello Mobile</a>: Aplicativos móveis para iOS e Android.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="../fotos/trello.png" alt="Logotipo do Trello" class="language-symbol">
+    `;
+    break;
+    case "jira":
+        languageDetails.innerHTML += `
+            <div class="language-details">
+                <h2>Jira</h2>
+                <p class="description">Jira é uma plataforma de gerenciamento de projetos e acompanhamento de problemas desenvolvida pela Atlassian. É amplamente utilizado por equipes ágeis para planejar, acompanhar e lançar software.</p>
+                <div class="categories">
+                    <div>
+                        <h3>Recursos Principais:</h3>
+                        <ul>
+                            <li>Criação e rastreamento de problemas, tarefas e histórias de usuários.</li>
+                            <li>Gerenciamento de sprints e backlog em metodologias ágeis.</li>
+                            <li>Personalização de fluxos de trabalho para se adequar aos processos da equipe.</li>
+                            <li>Relatórios e gráficos para monitorar o progresso do projeto.</li>
+                            <li>Integrações com outras ferramentas populares de desenvolvimento.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Integrações:</h3>
+                        <ul>
+                            <li><a href="https://marketplace.atlassian.com/addons/app/jira/trello-cloud">Integração com Trello</a>: Para conectar Trello e Jira e sincronizar informações entre as duas plataformas.</li>
+                            <li><a href="https://marketplace.atlassian.com/addons/app/jira/slack">Integração com Slack</a>: Para receber atualizações do Jira em canais do Slack.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Aplicações:</h3>
+                        <ul>
+                            <li><a href="https://www.atlassian.com/software/jira/download">Jira Software</a>: Aplicativo web e de desktop para planejar, acompanhar e lançar software.</li>
+                            <li><a href="https://www.atlassian.com/software/jira/service-management">Jira Service Management</a>: Para gerenciamento de serviços e suporte ao cliente.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="../fotos/jira_logo.png" alt="Logotipo do Jira" class="language-symbol">
+        `;
+        break;
+    case "kanban":
+        languageDetails.innerHTML += `
+            <div class="language-details">
+                <h2>Kanban</h2>
+                <p class="description">Kanban é uma metodologia de gerenciamento visual de fluxo de trabalho que ajuda equipes a visualizar, organizar e otimizar seu trabalho. Originalmente desenvolvida pela Toyota, agora é amplamente utilizada em vários setores e contextos de negócios.</p>
+                <div class="categories">
+                    <div>
+                        <h3>Princípios:</h3>
+                        <ul>
+                            <li>Visualização do trabalho em um quadro Kanban.</li>
+                            <li>Limitação do trabalho em progresso (WIP).</li>
+                            <li>Monitoramento do fluxo de trabalho e identificação de gargalos.</li>
+                            <li>Iteração contínua para melhorias incrementais.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Ferramentas:</h3>
+                        <ul>
+                            <li><a href="https://trello.com/">Trello</a>: Plataforma popular de gerenciamento de projetos baseada em quadros.</li>
+                            <li><a href="https://www.atlassian.com/software/jira/kanban">Jira Kanban Board</a>: Recurso do Jira para implementar metodologia Kanban.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="../fotos/kanban_logo.png" alt="Logotipo do Kanban" class="language-symbol">
+        `;
+        break;
+    case "scrum":
+        languageDetails.innerHTML += `
+            <div class="language-details">
+                <h2>Scrum</h2>
+                <p class="description">Scrum é uma estrutura de desenvolvimento ágil de software que enfatiza a colaboração, a adaptação contínua e a entrega incremental. É baseado em princípios de transparência, inspeção e adaptação.</p>
+                <div class="categories">
+                    <div>
+                        <h3>Papéis Principais:</h3>
+                        <ul>
+                            <li>Product Owner: Responsável por definir as necessidades dos clientes e priorizar o backlog do produto.</li>
+                            <li>Scrum Master: Facilita o processo Scrum, remove obstáculos e ajuda a equipe a alcançar seus objetivos.</li>
+                            <li>Equipe de Desenvolvimento: Responsável por entregar incrementos de produto funcionais.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Cerimônias:</h3>
+                        <ul>
+                            <li>Sprint Planning: Reunião para planejar o trabalho a ser realizado durante a sprint.</li>
+                            <li>Daily Standup: Reunião diária para sincronizar o progresso e identificar impedimentos.</li>
+                            <li>Review da Sprint: Reunião para revisar o trabalho concluído durante a sprint.</li>
+                            <li>Retrospective: Reunião para refletir sobre a sprint e identificar melhorias.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="../fotos/scrum_logo.png" alt="Logotipo do Scrum" class="language-symbol">
+        `;
+        break;
 
-                case "ruby":
-                    languageDetails.innerHTML += `
-                        <div class="language-details">
-                            <h2>Ruby</h2>
-                            <p class="description">Ruby é uma linguagem de programação interpretada de alto nível, puramente orientada a objetos e de fácil leitura e escrita.</p>
-                            <div class="categories">
-                                <div>
-                                    <h3>Frameworks:</h3>
-                                    <ul>
-                                        <li><a href="https://rubyonrails.org/">Ruby on Rails</a>: Framework web de código aberto escrito em Ruby.</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3>Bibliotecas:</h3>
-                                    <ul>
-                                        <li><a href="https://rspec.info/">RSpec</a>: Estrutura de teste para Ruby.</li>
-                                        <li><a href="https://bundler.io/">Bundler</a>: Gerenciador de dependências para Ruby.</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3>IDE's:</h3>
-                                    <ul>
-                                        <li><a href="https://www.jetbrains.com/ruby/">RubyMine</a>: IDE Ruby e Rails para desenvolvimento profissional.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="../fotos/rubylogo.png" alt="Logotipo do Ruby" class="language-symbol"> <!-- Imagem do logotipo do Ruby -->
-                    `;
-                    break;
 
                 default:
-                    languageDetails.innerHTML += "<p>Linguagem não encontrada.</p>"; // Mensagem exibida se a linguagem não for encontrada
+                    languageDetails.innerHTML = "<p>Linguagem não encontrada.</p>";
             }
         }
-    </script> 
+    </script>
 </body>
 </html>

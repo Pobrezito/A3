@@ -9,10 +9,8 @@
     <!--CSS-->
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/media.css">
-    
 
     <!--JS & jQuery-->
-    <script type="text/javascript" src="../jss/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,7 +66,14 @@
     </div>
     <script>
         document.getElementById('loginButton').addEventListener('click', function() {
-            window.location.href = 'pesquisa.html';
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'admin' && password === '1111') {
+                window.location.href = 'pesquisa.html';
+            } else {
+                alert('Usuário ou senha incorretos.');
+            }
         });
     </script>
 </body>
