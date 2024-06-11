@@ -5,125 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conheça mais sobre a Wiki de Animais - sua fonte confiável de informações sobre uma ampla variedade de animais.">
     <title>Sobre O coding planet - Conheça mais sobre nós</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-
-
-        }
-        header {
-            background: linear-gradient(68.15deg, #1d212d 16.62%, #000008 85.61%);
-              color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-        }
-        form {
-            background-color:  #08080a;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        input[type="text"],
-        input[type="email"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        input[type="submit"]:hover {
-            background-color: #555;
-        }
-        
-        .rodape {
-    padding: 32px;
-    color: #fff;
-    background: linear-gradient(68.15deg, #1d212d 16.62%, #000008 85.61%);
-    text-align: center;
-
-}
-    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/projetonp/css/feedback.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Sobre o Coding-planet</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Página Inicial</a></li>
-                <li><a href="regras.html">Regras</a></li>
-            </ul>
+    <header class="bg-dark text-white py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Coding-planet</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="regras.html">Regras</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-       <h2>Nossa Missão</h2>
-<p>Nossa missão é fornecer uma fonte confiável de informações sobre uma ampla variedade de linguagens de programação, desde as mais populares até as mais especializadas. Queremos ajudar os programadores a explorar e compreender as nuances de cada linguagem, capacitando-os a escrever código de forma eficaz e eficiente.</p>
+    <main class="main-content container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>Nossa Missão</h2>
+                <p>Nossa missão é fornecer uma fonte confiável de informações sobre uma ampla variedade de linguagens de programação, desde as mais populares até as mais especializadas. Queremos ajudar os programadores a explorar e compreender as nuances de cada linguagem, capacitando-os a escrever código de forma eficaz e eficiente.</p>
 
-<h2>Por que estudar linguagens de programação?</h2>
-<p>O estudo das linguagens de programação é fundamental para qualquer pessoa interessada em tecnologia e desenvolvimento de software. Cada linguagem tem suas próprias características e aplicações, e entender sua sintaxe e funcionalidades permite aos desenvolvedores escolher a ferramenta certa para o trabalho e criar soluções inovadoras para uma variedade de problemas.</p>
+                <h2>Por que estudar linguagens de programação?</h2>
+                <p>O estudo das linguagens de programação é fundamental para qualquer pessoa interessada em tecnologia e desenvolvimento de software. Cada linguagem tem suas próprias características e aplicações, e entender sua sintaxe e funcionalidades permite aos desenvolvedores escolher a ferramenta certa para o trabalho e criar soluções inovadoras para uma variedade de problemas.</p>
 
-
-        <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="assunto">Assunto:</label>
-            <select id="assunto" name="assunto" required>
-                <option value="">Selecione...</option>
-                <option value="dúvida">Dúvida</option>
-                <option value="sugestão">Sugestão</option>
-                <option value="relato">Relato</option>
-            </select>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-
-            <input type="submit" value="Enviar">
-        </form>
+                <h2>Contato</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <select class="form-control" id="assunto" name="assunto" required>
+                            <option value="">Selecione...</option>
+                            <option value="dúvida">Dúvida</option>
+                            <option value="sugestão">Sugestão</option>
+                            <option value="relato">Relato</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
     </main>
 
-    <footer class="rodape">
-        <p>&copy;Coding-planet</p>
+    <footer class="footer bg-dark text-light py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Coding-planet. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
