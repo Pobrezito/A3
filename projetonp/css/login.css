@@ -9,6 +9,7 @@
     color: #fff;
 }
 
+
 #titulo{
     font-size: 1.8em;
     color: #ffffff;
@@ -60,7 +61,7 @@ button {
 body {
     width: 100%;
     height: 100vh;
-    background-image: url(/projetonp/fotos/pesquisa_background.png);
+    background-image: url(../fotos/pesquisa_background.png);
     background-repeat: no-repeat;
     background-size: 100%;
     

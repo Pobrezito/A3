@@ -22,5 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlides();
     });
 
-    updateSlides(); // Initialize the carousel
+    updateSlides(); 
 });
